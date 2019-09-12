@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+     <link href="index.css" rel="stylesheet">
   </head>
 
    <body>
     <header>
-     <a href="/index.html">
+     <a href="index.html">
       <img src="img/svg/logo-technomart.svg" alt="лого Техномарт">
      </a>
-        <form>
+        <form action="https://echo.htmlacademy.ru" method="post">
          <input type="text" placeholder="Поиск">
           <button type="submit"></button>
         </form>
@@ -18,7 +19,7 @@
        <a href="#">Корзина</a>
        <a href="#">Оформить заказ</a>
         <div>
-       <h1>Шапка описание</h1>
+       <h1 class="visually-hidden">Шапка описание</h1>
        <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
       </div>
               
@@ -37,34 +38,34 @@
 
         <nav>
          <ul>
-          <li><a href=""> Главная</a></li>
-              <li><a href="">Компания</a></li>
-              <li><a href="">Каталог</a></li>
-              <li><a href="">Новости</a></li>
-              <li><a href="">Спецпредложения</a></li>
-              <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>  
+          <li><a href="index.html"> Главная</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>  
          </ul>
         </nav>
     </header>
 
 
   		<section>
-  		  <h2>Промо-блок</h2>
+  		  <h2 class="visually-hidden">Промо-блок</h2>
   		    <div>
-  			   <a href="">На любой вкус</a>
+  			   <a href="#">На любой вкус</a>
   		    </div>
   		    <div>
-  			   <a href="">На все случаи</a>
+  			   <a href="#">На все случаи</a>
   		    </div>
   		    <div>
-  			   <a href="">Для стройки/a>
+  			   <a href="#">Для стройки</a>
   		    </div>
   		    <div>
-  			   <a href="">на 350 товаров</a>
+  			   <a href="#">на 350 товаров</a>
   		    </div>
   		    <div>
-  			   <a href="">Бесплатно</a>
+  			   <a href="#">Бесплатно</a>
   		    </div>
   		      <figure>
   			     <img src="img/promo1.jpg" alt="промо фото">
@@ -235,24 +236,48 @@
                                  Все права защищены</p>
                                 </div>
                                  <div>
-                                  <h3>Соцсети</h3>
+                                  <h3 class="visually-hidden">Соцсети</h3>
                                    <ul>
-                                    <li><a href="http://vk.com">VK</a></li>
-                                    <li><a href="http://facebook.com">facebook</a></li>
-                                    <li><a href="http://instagram.com">instagram</a></li>
+                                    <li><a href="http://vk.com" aria-label="Техномарт вконтакте">VK</a></li>
+                                    <li><a href="http://facebook.com" aria-label="Техномарт в фэйсбуке">facebook</a></li>
+                                    <li><a href="http://instagram.com" aria-label="страница в инстраграме">instagram</a></li>
                                    </ul>
                                  </div>
                                   <div>
                                 <ul>
                                  <li>Обратная связь:</li>
-                                 <li><a href="mail"> mail@htmlacademy.ru </a></li>
+                                 <li><a href="mail" aria-label="электронная почта Техномарт"> mail@htmlacademy.ru </a></li>
                                 </ul>
                                  <ul>
                                   <li>Разработано -</li>
-                                  <li><a href="htmlacademy.ru">htmlacademy.ru</a></li>
+                                  <li><a href="htmlacademy.ru" aria-label="сайт разработчика htmlacademy">htmlacademy.ru</a></li>
                                  </ul>
                                 </div>
                          </footer>
+                         <!-- pop-up начало формы -->
+                            <section>
+                              <h5 class="visually-hidden">Форма отправки</h5>
+                                <form action="https://echo.htmlacademy.ru" method="post">
+                                  <label for="name">Ваше имя:</label>
+                                  <input type="text" name="surname" id="name" placeholder="Имя Фамилия">
+                                    <label for="email">Ваше e-mail:</label>
+                                    <input type="text" name="e-mail" id="email" placeholder="email@example.com">
+                                      <label for="letter">Текст письма</label>
+                                      <textarea name="text-letter" id="letter"  rows="10" cols="10">
+                                      В свободной форме
+                                      </textarea>
+                                        <button type="submit">Отправить</button>
+                                </form>
+                                  <button type="button" aria-label="Закрыть">Х</button>
+                            </section>
+                         <!-- pop-up конец формы -->   
+                         <!-- pop-up начало карты -->  
+                          <section>
+                              <h5 class="visually-hidden">Личный кабинет</h5>
+                              <img src="map.png" alt="Адрес компании ул.Большая Конюшенная, 19" >
+                              <button type="button" aria-label="Закрыть">Х</button>
+                            </section>
+                         <!-- pop-up конец карты - -> 
      </body>
 </html>
   

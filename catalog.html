@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    	<link href="catalog.css" rel="stylesheet">
   </head>
 
    <body>
@@ -18,7 +19,7 @@
   	   <a href="#">Корзина</a>
   	   <a href="#">Оформить заказ</a>
   	    <div>
-  		 <h1>Шапка описание</h1>
+  		 <h1 class="visually-hidden">Шапка описание</h1>
   		 <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
   		</div>
   			      
@@ -37,7 +38,7 @@
 
   			<nav>
   			 <ul>
-  			  <li><a href=""> Главная</a></li>
+  			  <li><a href="">Главная</a></li>
               <li><a href="">Компания</a></li>
               <li><a href="">Каталог</a></li>
               <li><a href="">Новости</a></li>
@@ -50,44 +51,44 @@
 
         <main>
          <article>
-	    <h2>breadcrumbs</h2>
+	    <h2 class="visually-hidden">breadcrumbs</h2>
 	     <ul>
-	      <li><a href="">Главная</a></li>
+	      <li class="visually-hidden"><a href="">Главная</a></li>
 		  <li><a href=""> Каталог</a></li>
 		  <li><a href=""> Инструмент</a></li>
 		  <li><a href=""> Перфораторы</a></li>
 	     </ul>
-	      <h1>Перфораторы</h1>
+	      <h2>Перфораторы</h2>
 	      <section>
-	       <h2>Фильтр товаров</h2>
-		    <h3>Фильтр:</h3>
+	       <h2 class="visually-hidden">Фильтр товаров</h2>
+		    <form action="https://echo.htmlacademy.ru" method="post">
+		    <fieldset>
+		    <legend>Фильтр:</legend>
 		     <label for="rang">Цена</label>
-	          <input type="range" min="0"  max="30000" name="range" id="rang" >
-	           <output name="sum">25000</output>
-	            <h3>ПРОИЗВОДИТЕЛИ:</h3>
-		          <form>
-			       <label for ="name1">BOSCH</label>
-			       <input type="radio" value="" id="name1">
+	         <input type="range" min="0"  max="30000" name="range" id="rang" >
+	         <output name="sum">25000</output><hr>
+	         <legend>Производители:</legend>
+		           <label for ="name1">BOSCH</label>
+			       <input type="checkbox" value="" id="name1" checked>
 			       <label for ="name2">ИНТЕРСКОЛ</label>
-			       <input type="radio" value="" id="name2">
+			       <input type="checkbox" value="" id="name2">
 			       <label for ="name3">MAKITA</label>
-			       <input type="radio" value="" id="name3">
+			       <input type="checkbox" value="" id="name3" checked>
 			       <label for ="name4">DEWALT</label>
-			       <input type="radio" value="" id="name4">
-			       <label for ="name5">HITACHI</label>
-			      </form>
-	               <h3>ПИТАНИЕ:</h3>
-		             <form>
-			           <label for ="name7">Аккумуляторные</label>
-			           <input type="radio" id="name7" value="">
-			           <label for ="name8">Сетевые</label>
-			           <input type="radio" 	id="name8" value="">
-			           <button type="submit" value="submit">Показать</button>
-		             </form>
+			       <input type="checkbox" value="" id="name4">
+			       <label for ="name5">HITACHI</label><hr>
+			      		<legend>ПИТАНИЕ:</legend>
+		             	<label for ="name-power">Аккумуляторные</label>
+			           	<input type="radio" name="power" id="name-power" value="" checked>
+			           	<label for ="name-power-2">Сетевые</label>
+			           	<input type="radio" name="power" id="name-power-2" value="">
+			           	<button type="submit" value="submit">Показать</button>
+		     </fieldset>
+		     </form>
 	      </section>
 
 	       <section>
-	        <h2>Список товаров</h2>
+	        <h2 class="visually-hidden">Список товаров</h2>
 	          <h3>Сортировка</h3>
 			   <ul>
 			    <li>по цене</li>
@@ -160,21 +161,21 @@
 
 
 	        <section>
-		     <h3>Пагинация</h3>
+		     <h3 class="visually-hidden">Пагинация</h3>
 		      <ul>
-			   <li>1</li>
-			     <li>2</li>
-			   <li>3</li>
-			   <li>Следующая</li>
+				<li><a href="#" aria-label="1 страница">1</a></li>
+				<li><a href="#" aria-label="2 страница">2</a></li>
+				<li><a href="#" aria-label="3 страница">3</a></li>
+				<li><a href="#" aria-label="Следующая страница">Следующая</a></li>
 			   </ul>
 	        </section>
 
-	         <div>
+	         <section>
 		      <p><h4>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h4>
                 Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br>
                 ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-	          </div>
+	          </section>
 	       </article>
 	    </main>
 
@@ -203,24 +204,35 @@
                Все права защищены</p>
               </div>
                <div>
-                <h3>Соцсети</h3>
+                <h3 class="visually-hidden">Соцсети</h3>
                  <ul>
-                  <li><a href="http://vk.com">VK</a></li>
-                  <li><a href="http://facebook.com">facebook</a></li>
-                  <li><a href="http://instagram.com">instagram</a></li>
+                  <li><a href="http://vk.com" aria-label="Техномарт вконтакте">VK</a></li>
+                  <li><a href="http://facebook.com" aria-label="Техномарт в фэйсбуке">facebook</a></li>
+                  <li><a href="http://instagram.com" aria-label="страница в инстраграме">instagram</a></li>
                  </ul>
                </div>
                 <div>
               <ul>
                <li>Обратная связь:</li>
-               <li><a href="mail"> mail@htmlacademy.ru </a></li>
+               <li><a href="mail" aria-label="электронная почта техномарт"> mail@htmlacademy.ru </a></li>
               </ul>
                <ul>
                 <li>Разработано -</li>
-                <li><a href="htmlacademy.ru">htmlacademy.ru</a></li>
+                <li><a href="htmlacademy.ru" aria-label="сайт разработчика htmlacademy">htmlacademy.ru</a></li>
                </ul>
               </div>
   		 </footer>
+  		 	<!-- pop-up корзины -->  
+             <section>
+               <h4 class="visually-hidden">Личный кабинет</h4>
+               		<p>Товар добавлен в корзину!</p>
+               			<form action="https://echo.htmlacademy.ru" method="post">
+                  			<button type="submit">Оформить заказ</button>
+                  		</form>
+                  			<button type="button">Продолжить покупки</button>
+                  				<button type="button" aria-label="Закрыть">Х</button>
+              </section>
+             <!-- pop-up корзины - ->
   	 </body>
 </html>
 	

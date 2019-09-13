@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-     <link href="index.css" rel="stylesheet">
+     <link href="css/index.css" rel="stylesheet">
   </head>
 
    <body>
     <header>
-     <a href="index.html">
+     <a href="/index.html">
       <img src="img/svg/logo-technomart.svg" alt="лого Техномарт">
      </a>
         <form action="https://echo.htmlacademy.ru" method="post">
          <input type="text" placeholder="Поиск">
-          <button type="submit"></button>
+          <button type="submit" aria-label="поиск по странице"></button>
         </form>
        <a href="#">Закладки</a>
        <a href="#">Корзина</a>
@@ -31,14 +31,14 @@
        </div>
         
         <section>
-         <button type="button">Войти</button>
-          <button type="button">Регистрация</button>
+         <button type="button" aria-label="вход в личный кабинет">Войти</button>
+          <button type="button" aria-label="регистрация личного кабинета">Регистрация</button>
         </section>
 
 
         <nav>
          <ul>
-          <li><a href="index.html"> Главная</a></li>
+          <li><a href="#"> Главная</a></li>
               <li><a href="#">Компания</a></li>
               <li><a href="#">Каталог</a></li>
               <li><a href="#">Новости</a></li>
@@ -82,30 +82,30 @@
   		      <h2>Популярные товары</h2>
   		        <a href="/catalog.html">Все популярные товары</a>
   		          <ul>
-  				        <li><a href="">
+  				        <li><a href="/catalog.html">
                     <img src="img/Perforator_1.jpg" alt="BOSCH BFG 3000">
                       </a>
-                        <h3><a href="">Перфоратор BOSCH BFG 3000<a></h3>
+                        <h3><a href="/catalog.html">Перфоратор BOSCH BFG 3000<a></h3>
                           <p> 22500 Р.</p>
                           <p>15500 Р.</p>
                   </li>
-                    <li><a href="">
+                    <li><a href="/catalog.html">
                       <img src="img/Perforator_2.jpg" alt="BOSCH BFG 6000">
                         </a>
-                          <h3><a href="">Перфоратор BOSCH BFG 6000<a></h3>
+                          <h3><a href="/catalog.html">Перфоратор BOSCH BFG 6000<a></h3>
                             <p> 30500 Р.</p>
                             <p>25500 Р.</p>
                     </li>
-                      <li><a href="">
+                      <li><a href="/catalog.html">
                           <img src="img/Perforator_3.jpg" alt="BOSCH BFG 2000">
                           </a>
-                            <h3><a href="">Перфоратор BOSCH BFG 2000<a></h3>
+                            <h3><a href="/catalog.html">Перфоратор BOSCH BFG 2000<a></h3>
                               <p>12500 Р.</p>
                       </li>
-                        <li><a href="">
+                        <li><a href="/catalog.html">
                           <img src="img/Perforator_4.jpg" alt="BOSCH BFG 3000">
                             </a>
-                              <h3><a href="">Перфоратор BOSCH BFG 3000<a></h3>
+                              <h3><a href="/catalog.html">Перфоратор BOSCH BFG 3000<a></h3>
                                 <p> 22500 Р.</p>
                                 <p>15500 Р.</p>
                         </li>
@@ -115,45 +115,45 @@
 
           <section>
         	 <h2>Популярные производители</h2>
-        	   <button type="button">Все производители</button>
+        	   <a href="/catalog.html">Все производители</a>
   		        <ul>
                 <li>
-  		          <a href="">
+  		          <a href="#">
   			           <img src="img/bosch.png" alt="BOSCH">  
                 </a>
                 </li>
                   <li>
-                    <a href="">
+                    <a href="#">
   			               <img src="img/Makita.png" alt="MAKITA">  
                     </a>
                   </li>
                     <li>
-                      <a href="">
+                      <a href="#">
   			                 <img src="img/DeWALT.png" alt="DEWALT">  
                       </a> 
                     </li>
   		                <li>
-  			               <a href="">
+  			               <a href="#">
   			                 <img src="img/Интерскол.png" alt="интерскол">  
   			               </a>
   		                </li>
   		                  <li>
-  			                   <a href="">
+  			                   <a href="#">
   			                     <img src="img/Hitachi.png" alt="HITACHI">  
   			                   </a> 
   		                  </li>
   		                    <li>
-  			                   <a href="">
+  			                   <a href="#">
   			                     <img src="img/LG.png" alt="LG">  
   			                   </a> 
   		                    </li>
   		                      <li>
-  			                       <a href="">
+  			                       <a href="#">
   			                         <img src="img/AEG.png" alt="AEG">  
   			                       </a> 
   		                      </li>
   		                        <li>
-  			                       <a href="">
+  			                       <a href="#">
   			                         <img src="img/Metabo.png" alt="metabo">  
   			                       </a>
   		                        </li>
@@ -194,7 +194,7 @@
                         	<li>Деловые линии</li>
                         	<li>Автотрейдинг</li>
                         	<li>ЖелДорЭкспедиция</li>
-                        	<button type="button">Подробнее о компании</button>
+                        	<button type="button" aria-label="Описание компании">Подробнее о компании</button>
                         </ul>
 
   		          </section>
@@ -266,7 +266,7 @@
                                       <textarea name="text-letter" id="letter"  rows="10" cols="10">
                                       В свободной форме
                                       </textarea>
-                                        <button type="submit">Отправить</button>
+                                        <button type="submit" aria-label="отправить заявку для заказа">Отправить</button>
                                 </form>
                                   <button type="button" aria-label="Закрыть">Х</button>
                             </section>

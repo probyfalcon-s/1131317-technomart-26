@@ -3,54 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    	<link href="css/catalog.css" rel="stylesheet">
+     <link href="css/catalog.css" rel="stylesheet">
   </head>
 
    <body>
-  	<header>
-  	 <a href="index.html">
-      <img src="img/svg/logo-technomart.svg" alt="лого Техномарт">
+    <header>
+      <nav class="main-navigation">
+     <a href="index.html">
+      <img class="logo-tehnomart" src="img/svg/logo-technomart.svg" alt="лого Техномарт">
      </a>
-  	    <form>
+        <form action="https://echo.htmlacademy.ru" method="post">
          <input type="text" placeholder="Поиск">
-          <button type="submit" aria-label="поиск по странице"></button>
+          <button class="button search" type="submit" aria-label="поиск по странице"></button>
         </form>
-  	   <a href="#">Закладки</a>
-  	   <a href="#">Корзина</a>
-  	   <a href="#">Оформить заказ</a>
-  	    <div>
-  		 <h1 class="visually-hidden">Шапка описание</h1>
-  		 <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-  		</div>
-  			      
-  		 <div>
-  		 	<ul>
-  		 		<li>+7 (812) 555-05-55</li>
-  		 		<li>г.Санкт-Петербург, ул.Конюшенная, д.19/8</li>
-  		 	</ul>
-  		 </div>
-  			
-  			<section>
-  			 <button type="button" aria-label="вход в личный кабинет">Войти</button>
-  			  <button type="button" aria-label="Регистрация личного кабинета">Регистрация</button>
-  			</section>
+       <a class="button button-basket" href="#">Закладки</a>
+       <a class="button button-basket" href="#">Корзина</a>
+       <a class="button checkout" href="#">Оформить заказ</a>
+      </nav>
+      <div class="background">
+        <div class="header-info">
+       <h1 class="visually-hidden">Шапка описание</h1>
+       <p>Интернет-магазин<br>
+          строительных материалов<br>
+          и инструментов для ремонта</p>
+      </div>
+              
+       <div class="header-contacts">
+        <ul>
+          <li class="contacts-phone">+7 (812) 555-05-55</li>
+          <li class="contacts-address">г.Санкт-Петербург, ул.Конюшенная, д.19/8</li>
+        </ul>
+       </div>
+        
+        <ul class="user-navigation">
+         <li><a class="button"aria-label="вход в личный кабинет">Войти</a></li>
+          <li><a class="button" aria-label="регистрация личного кабинета">Регистрация</a></li>
+        </ul>
 
 
-  			<nav>
-  			 <ul>
-  			  <li><a href="index.html">Главная</a></li>
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Спецпредложения</a></li>
-              <li><a href="#">Доставка</a></li>
-  			  <li><a href="#">Контакты</a></li>	
-  			 </ul>
-  			</nav>
+        <nav>
+         <ul class="site-navigation">
+          <li><a class="button" href="index.html"> Главная</a></li>
+              <li><a class="button" href="#">Компания</a></li>
+              <li><a class="button" href="#">Каталог</a></li>
+              <li><a class="button" href="#">Новости</a></li>
+              <li><a class="button" href="#">Спецпредложения</a></li>
+              <li><a class="button" href="#">Доставка</a></li>
+          <li><a class="button" href="#">Контакты</a></li>  
+         </ul>
+        </nav>
     </header>
+    <div>
 
-        <main>
+        <main class="main-catalog">
          <article>
+         	<div class="breadcrumbs">
 	    <h2 class="visually-hidden">breadcrumbs</h2>
 	     <ul>
 	      <li class="visually-hidden"><a href="index.html">Главная</a></li>
@@ -58,7 +65,10 @@
 		  <li><a href="#"> Инструмент</a></li>
 		  <li><a href="#"> Перфораторы</a></li>
 	     </ul>
+			</div>
+			<div class="background-h">
 	      <h2>Перфораторы</h2>
+	      	</div>
 	      <section>
 	       <h2 class="visually-hidden">Фильтр товаров</h2>
 		    <form action="https://echo.htmlacademy.ru" method="post">
@@ -82,12 +92,12 @@
 			           	<input type="radio" name="power" id="name-power" value="" checked>
 			           	<label for ="name-power-2">Сетевые</label>
 			           	<input type="radio" name="power" id="name-power-2" value="">
-			           	<button type="submit" value="submit" aria-label="кнопка фильтр товаров">Показать</button>
+			           	<button class="button-show" type="submit" value="submit" aria-label="кнопка фильтр товаров">Показать</button>
 		     </fieldset>
 		     </form>
 	      </section>
 
-	       <section>
+	       <section class="popular-products popular-products-active">
 	        <h2 class="visually-hidden">Список товаров</h2>
 	          <h3>Сортировка</h3>
 			   <ul>
@@ -100,67 +110,67 @@
 			      		<img src="img/Perforator_2.jpg" alt="BOSCH BFG 3000">
 			        </a>
 			     		<h3><a href="#">Перфоратор BOSCH BFG 3000<a></h3>
-			      			<p> 22500 Р.</p>
-			      			<p>15500 Р.</p>
+			      			<p class="delete"> 22500 Р.</p>
+			      			<p class="price">15500 Р.</p>
 		        </li>
                   	<li><a href="#">
 			      			<img src="img/Perforator_3.jpg" alt="BOSCH BFG 6000">
 			          	</a>
 			     		<h3><a href="#">Перфоратор BOSCH BFG 6000<a></h3>
-			      			<p> 30500 Р.</p>
-			     		 	<p>25500 Р.</p>
+			      			<p class="delete"> 30500 Р.</p>
+			     		 	<p class="price">25500 Р.</p>
 		        	</li>
                      	<li><a href="#">
 			      			<img src="img/Perforator_4.jpg" alt="BOSCH BFG 2000">
 			        		</a>
 			     				<h3><a href="#">Перфоратор BOSCH BFG 2000<a></h3>
-			      						<p>12500 Р.</p>
+			      						<p class="price">12500 Р.</p>
 		        	</li>
                         <li><a href="#">
 			      				<img src="img/Perforator_2.jpg" alt="BOSCH BFG 3000">
 			        		</a>
 			     				<h3><a href="#">Перфоратор BOSCH BFG 3000<a></h3>
-			      					<p> 22500 Р.</p>
-			      					<p>15500 Р.</p>
+			      					<p class="delete"> 22500 Р.</p>
+			      					<p class="price">15500 Р.</p>
 		       			 </li>
                          	<li><a href="#">
 			      					<img src="img/Perforator_3.jpg" alt="BOSCH BFG 6000">
 			       				</a>
 			    					<h3><a href="#">Перфоратор BOSCH BFG 6000<a></h3>
-			      						<p> 30500 Р.</p>
-			      						<p>25500 Р.</p>
+			      						<p class="delete"> 30500 Р.</p>
+			      						<p class="price">25500 Р.</p>
 		        			</li>
 			              		<li><a href="#">
 			      						<img src="img/Perforator_4.jpg" alt="BOSCH BFG 2000">
 			        				</a>
 			     						<h3><a href="#">Перфоратор BOSCH BFG 2000<a></h3>
-			     							<p>12500 Р.</p>
+			     							<p class="price">12500 Р.</p>
 		        				</li>
 		                    		<li><a href="#">
 			      						<img src="img/Perforator_2.jpg" alt="BOSCH BFG 3000">
 			        					</a>
 			     							<h3><a href="#">Перфоратор BOSCH BFG 3000<a></h3>
-			      								<p> 22500 Р.</p>
-			      								<p>15500 Р.</p>
+			      								<p class="delete"> 22500 Р.</p>
+			      								<p class="price">15500 Р.</p>
 		        					</li>
 		                      			<li><a href="#">
 			      							<img src="img/Perforator_3.jpg" alt="BOSCH BFG 6000">
 			        						</a>
 			     								<h3><a href="#">Перфоратор BOSCH BFG 6000<a></h3>
-			      									<p> 30500 Р.</p>
-			      									<p>25500 Р.</p>
+			      									<p class="delete">30500 Р.</p>
+			      									<p class="price">25500 Р.</p>
 		        					</li>
 		                       			<li><a href="#">
 			      							<img src="img/Perforator_4.jpg" alt="BOSCH BFG 2000">
 			        						</a>
 			     								<h3><a href="#">Перфоратор BOSCH BFG 2000<a></h3>
-			      									<p>15500 Р.</p>
+			      									<p class="price">15500 Р.</p>
 		        						</li>
 		       </ul>
 	        </section>
 
 
-	        <section>
+	        <section class="pagination">
 		     <h3 class="visually-hidden">Пагинация</h3>
 		      <ul>
 				<li><a href="#" aria-label="1 страница">1</a></li>
@@ -180,48 +190,46 @@
 	    </main>
 
 
-	      <footer>
-	      	<nav>
-               <img src="img/svg/logo-technomart.svg" alt="logo Техномарт">
-                    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                       +7 (812) 555-05-55
-                    </p>
-						<ul>
-  	       				 <li><a href="#">Компания</a></li>
-  	       				 <li><a href="#">Новости</a></li>
-  	       				 <li><a href="#">Каталог</a></li>
-  	       				 <li><a href="#">Доставка</a></li>
-  	       				 <li><a href="#">Контакты</a></li>
-  	       				 <li><a href="#">Материалы</a></li>
-  	       				 <li><a href="#">Техника</a></li>
-  	       				 <li><a href="#">Инструмент</a></li>
-  	       				 <li><a href="#">Спецпредложения</a>
-  	       				</ul>
-  	       	</nav>
-  		   				               
-  			 <div>
-  			  <p>© 2010–2019 Компания «Техномарт»<br>
-               Все права защищены</p>
-              </div>
-               <div>
-                <h3 class="visually-hidden">Соцсети</h3>
-                 <ul>
-                  <li><a href="http://vk.com" aria-label="Техномарт вконтакте">VK</a></li>
-                  <li><a href="http://facebook.com" aria-label="Техномарт в фэйсбуке">facebook</a></li>
-                  <li><a href="http://instagram.com" aria-label="страница в инстраграме">instagram</a></li>
-                 </ul>
-               </div>
-                <div>
-              <ul>
-               <li>Обратная связь:</li>
-               <li><a href="mail@htmlacademy.ru" aria-label="электронная почта техномарт"> mail@htmlacademy.ru </a></li>
-              </ul>
-               <ul>
-                <li>Разработано -</li>
-                <li><a href="http://htmlacademy.ru" aria-label="сайт разработчика htmlacademy">htmlacademy.ru</a></li>
-               </ul>
-              </div>
-  		 </footer>
+	        <footer class="main-footer">
+                         <img class="logo-tehnomart" src="img/svg/logo-technomart.svg" alt="logo Техномарт">
+                             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                                +7 (812) 555-05-55
+                            </p>
+                          <div class="footer-nav">
+                           <ul class="footer-button">
+                              <li><a class="button" href="#">Компания</a></li>
+                              <li><a class="button" href="#">Новости</a></li>
+                              <li><a class="button" href="#">Каталог</a></li>
+                              <li><a class="button" href="#">Доставка</a></li>
+                              <li><a class="button" href="#">Контакты</a></li>
+                              <li><a class="button button-second-line" href="#">Материалы</a></li>
+                              <li><a class="button button-second-line" href="#">Техника</a></li>
+                              <li><a class="button button-second-line" href="#">Инструмент</a></li>
+                              <li><a class="button button-second-line" href="#">Спецпредложения</a>
+                            </ul>
+                          </div>
+                          <div class="second-footer">
+                            <p class="footer-security">© 2010–2019 Компания «Техномарт»<br>
+                                 Все права защищены</p>
+                                  <div class="footer-social">
+                                  <h3 class="visually-hidden">Соцсети</h3>
+                                   <ul>
+                                    <li><a class="social-button" href="#" aria-label="Техномарт вконтакте">VK</a></li>
+                                    <li><a class="social-button" href="#" aria-label="Техномарт в фэйсбуке">facebook</a></li>
+                                    <li><a class="social-button" href="#" aria-label="страница в инстраграме">instagram</a></li>
+                                   </ul>
+                                 <div>
+                                <p class="feedback">
+                                 <b>Обратная связь:</b>
+                                    <a class="button" href="mailto:htmlacademy.ru@mail.ru" aria-label="электронная почта Техномарт">htmlacademy.ru@mail.ru</a>
+                                </p>
+                                 <p class="footer-copyright">
+                                  <b>Разработано -</b>
+                                  <a class="button" href="http://htmlacademy.ru" aria-label="сайт разработчика htmlacademy">htmlacademy.ru</a>
+                                 </p>
+                                </div>
+                              </div>
+                         </footer>
   		 	<!-- pop-up корзины -->  
              <section>
                <h4 class="visually-hidden">Личный кабинет</h4>

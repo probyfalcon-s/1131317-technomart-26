@@ -1,6 +1,48 @@
-body{
+/*ОБЩЕЕ*/
+body {
+	margin: 0;	
+	padding: 0;
+
+	font-family: PT Sans Narrow, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000; 
+	text-transform: none;
+
+	background-color: #ffffff;
 	
 }
+
+html { 
+	box-sizing: border-box; 
+}
+
+img { 
+	max-width: 100%; 
+}
+
+a { 
+	text-decoration: none ;
+}
+
+.button {
+	font: inherit;
+
+	text-decoration: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	border: none;
+}
+
+/*.button:hover,
+.button:focus,
+.button:active {
+	background-color: #663d15; 
+}
+*/
 .visually-hidden{
 	position: absolute;
 	width: 1px;
@@ -10,4 +52,289 @@ body{
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+/*ВЕРХНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ*/
+.main-navigation {
+	font-size: 17px;
+	font-height: 18px;
+	color: #ffffff;
+
+	background-color: #293449;
+}
+
+.main-navigation .search {
+	background-color: #293449;
+	color: #ffffff;
+}
+
+.main-navigation .search:active {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.main-navigation .button-basket:active {
+	color: #b2b2b2;
+}
+
+.checkout {
+	background-color: #63a63e;
+	color: #ffffff;
+}
+
+.checkout:hover,
+.checkout:focus {
+	background-color: #5fbb2d;
+	color: #ffffff;
+}
+
+.checkout:active {
+	background-color: #518534;
+	color: #a8c29a;
+}
+
+/*МЕНЮ НАВИГАЦИЯ ПО САЙТУ*/
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation {
+	font-size: 17px;
+	font-height: 17px;
+	color: #ffffff;
+
+	background-color: #293449;
+	box-shadow: 0px 5px 0 0 #293449;
+}
+
+.site-navigation .button:focus,
+.site-navigation .button:hover {
+	background-color: #000000; 
+}
+
+.site-navigation .button:active {
+	background-color: #1d2739; 
+	color: #b2b2b2;
+}
+
+.background {
+	background-color: #f3f7f9;
+}
+/*ЛОГО*/
+.logo-tehnomart {
+	background-color: #ee3643;
+	box-shadow: 0px 5px 0 0 #b52933;
+}
+
+.logo-tehnomart:hover,
+.logo-tehnomart:focus {
+	background-color: #ca2c37;
+	box-shadow: 0px 5px 0 0 #8e1e26;
+}
+/*ОПИСАНИЕ ИНТЕРНЕТ МАГАЗИНА*/
+.header-info {
+	color: #ee3643;
+}
+/*КОНТАКТЫ МАГАЗИНА*/
+.header-contacts ul{
+	list-style: none;
+	text-align: center;
+}
+
+.contacts-phone {
+	font-size: 21px;
+	line-height: 21px;
+
+	color: #ee3643;
+	border: 2px solid #ffffff;
+
+}
+
+.contacts-address {
+	font-size: 14px;
+	line-height: 24px;
+
+	color: #32425c;
+}
+/*ЛИЧНЫЙ КАБИНЕТ*/
+ .user-navigation {
+ 	list-style: none;
+ }
+
+ .user-navigation a{
+ 	color: #000000;
+ 	background-color: #ffffff;
+ }
+
+ .user-navigation .button:focus,
+ .user-navigation .button:hover {
+ 	color: #ee3643;
+ }
+
+ .user-navigation .button:active,
+ .user-navigation .button:active {
+ 	color: #b2b2b2;
+ }
+/*ПОПУЛЯРНЫЕ ТОВАРЫ */
+ .back-popular-products h2 {
+ 	font-size: 30px;
+ 	line-height: 30px;
+
+ 	color: #32425c;
+ }
+
+.back-popular-products {
+ 	background-color: #f9f5f0;
+ 	background-image: url("img/back-popular-products.png");
+ 	background-position: top center;
+ 	background-repeat: no-repeat;
+ }
+
+.button-popular-products {
+	background-color: #ee3643;
+	border-radius: 5px;
+}
+
+.button-popular-products:focus,
+.button-popular-products:hover {
+	background-color: #ca2c37;
+}
+
+.button-popular-products:active {
+	background-color: #ba2732;
+}
+
+.popular-products .delete {
+	text-decoration: line-through;
+	color: #a9a9a9;
+}
+
+.popular-products .price {
+	background-color: #ee3643;
+}
+
+.popular-products ul{
+	list-style: none;
+}
+
+.popular-products li {
+	border: 1px solid #eaeaea;
+}
+
+.popular-products li:focus,
+.popular-products li:hover {
+	box-shadow: 10px 10px 50px 0px #000000;
+}
+
+/*.popular-products-active li::before {
+	background-image: none;
+}*/
+/*ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
+.popular-manufacturer li:active {
+	box-shadow: 5px 5px 30px 0px #000000;
+	opacity: 0.5;
+}
+/* О НАС*/
+.about  ul {
+	list-style: none;
+}
+/*ГЛАВНАЯ ФУТЕРА*/
+.footer-nav ul {
+	list-style: none;
+}
+/*НАВИГАЦИЯ ПО САЙТУ В ФУТЕРЕ*/
+.footer-nav a {
+	background: none;
+}
+
+.button a:hover,
+.button a:focus,
+.button-second-line a:hover,
+.button-second-line a:focus {
+	text-decoration: underline;
+}
+
+.button a:active { 
+	color: #8b96a4;
+	text-decoration: none;
+}
+
+.footer-button .button-second-line,
+.feedback .button-second-line,
+.feedback .button,
+.footer-copyright .button {
+	color: #e1ce80;
+}
+
+.button-second-line a:hover,
+.button-secon-line a:focus,
+.feedback .button:hover,
+.feedback .button:focus,
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+	color: #e1ce80;
+	text-decoration: underline;
+}
+
+.main-footer {
+	color: #ffffff;
+
+	background-color: #32425c; 
+	background-image: url("img/footer.png");
+	background-position: 0 0;
+	background-image: repeat;	
+}
+/*ВТОРАЯ ЧАСТЬ ФУТЕРА - НИЖНЯЯ*/
+.second-footer {
+	color: #ffffff;
+
+	background-color: #293449; 
+	background-image: url("img/second-footer.png");
+	background-position: 0 0;
+	background-image: repeat;
+}
+
+.footer-social {
+	text-align: center;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.footer-button .button:focus,
+.footer-button .button:hover {
+	text-decoration: underline;
+}
+
+.footer-button .button:active {
+	color: #b2b2b2;
+	text-decoration: none;
+}
+
+.footer-button .button-second-line:active {
+	color: #998a6e;
+	text-decoration: none;
+}
+
+.social-buttom {
+	color: #ffffff;
+}
+
+.social-buttom:hover,
+.social-buttom:focus {
+	color: #ee3643;
+}
+
+.social-buttom:active {
+	color: #ee3643;
+}
+
+.footer-copyright {
+	text-align: center;
+}
+
+.feedback .button:active,
+.footer-copyright .button:active {
+	color: #ee3643;
+	text-decoration: none;
 }

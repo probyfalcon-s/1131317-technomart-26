@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
      <link href="css/index.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
 
    <body>
@@ -13,10 +14,13 @@
       <img class="logo-tehnomart" src="img/svg/logo-technomart.svg" alt="лого Техномарт">
      </a>
         <form action="https://echo.htmlacademy.ru" method="post">
+         <img src="img/svg/icon-search.svg">
          <input type="text" placeholder="Поиск">
           <button class="button search" type="submit" aria-label="поиск по странице"></button>
         </form>
+       <img src="img/svg/icon-bookmark.svg">
        <a class="button button-basket" href="#">Закладки</a>
+       <img src="img/svg/icon-cart.svg">
        <a class="button button-basket" href="#">Корзина</a>
        <a class="button checkout" href="#">Оформить заказ</a>
       </nav>
@@ -30,14 +34,20 @@
               
        <div class="header-contacts">
         <ul>
-          <li class="contacts-phone">+7 (812) 555-05-55</li>
+         <li class="contacts-phone">
+          <img src="img/svg/icon-phone.svg">+7 (812) 555-05-55</li>
           <li class="contacts-address">г.Санкт-Петербург, ул.Конюшенная, д.19/8</li>
         </ul>
        </div>
         
         <ul class="user-navigation">
-         <li><a class="button"aria-label="вход в личный кабинет">Войти</a></li>
-          <li><a class="button" aria-label="регистрация личного кабинета">Регистрация</a></li>
+         <li>
+          <img src="img/svg/icon-login.svg">
+          <a class="button"aria-label="вход в личный кабинет">Войти</a>
+        </li>
+          <li>
+            <a class="button" aria-label="регистрация личного кабинета">Регистрация</a>
+          </li>
         </ul>
 
 
@@ -84,7 +94,7 @@
   		        <a class="button button-popular-products" href="catalog.html">Открыть каталог</a>
   		</section>
 
-  		    <section class="popular-products popular-products-active">
+  		    <section class="list-products popular-products-active">
             <div class="back-popular-products">
   		      <h2>Популярные товары</h2>
   		        <a class="button button-popular-products" href="catalog.html">Все популярные товары</a>
@@ -121,7 +131,7 @@
   	     </section>
 
 
-          <section class="popular-products popular-manufacturer">
+          <section class="list-products popular-manufacturer">
             <div class="back-popular-products">
         	 <h2>Популярные производители</h2>
         	   <a class="button button-popular-products" href="catalog.html">Все производители</a>
@@ -171,7 +181,7 @@
   		    </section>
 
 
-  		      <section>
+  		      <section class="service">
               <h2>Сервисы</h2>
                 <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -200,7 +210,7 @@
                       <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
                         Техномарт работает со многими транспортными компаниями: 
                       </p>
-                        <ul>
+                        <ul class="list">
                         	<li>Деловые линии</li>
                         	<li>Автотрейдинг</li>
                         	<li>ЖелДорЭкспедиция</li>
@@ -210,13 +220,13 @@
   		          </section>
 
 
-  		            <section>
+  		            <section class="contacts">
   		            	<h2>Контакты</h2>
                         <p>Вы можете забрат товар сами,<br>
                           заехав в наш офис:
   		            		  </p>
   		            	     <div>
-                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2ce81d6c0243b2dff85f3d8f0c294e2830169148bbb9853d7b39b6d01cd5ddfd&amp;source=constructor" width="500" height="400" frameborder="0">
+                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2ce81d6c0243b2dff85f3d8f0c294e2830169148bbb9853d7b39b6d01cd5ddfd&amp;source=constructor" width="300" height="158" frameborder="0">
                           </iframe>
 			                     <a class="button button-popular-products" href="map.html">Заблудились? Напишите нам</a>		
 			                   </div>
@@ -247,14 +257,14 @@
                                   <div class="footer-social">
                                   <h3 class="visually-hidden">Соцсети</h3>
                                    <ul>
-                                    <li><a class="social-button" href="#" aria-label="Техномарт вконтакте">VK</a></li>
-                                    <li><a class="social-button" href="#" aria-label="Техномарт в фэйсбуке">facebook</a></li>
-                                    <li><a class="social-button" href="#" aria-label="страница в инстраграме">instagram</a></li>
+                                   <li><a class="social-button" href="#" aria-label="Техномарт вконтакте"><img src="img/svg/icon-vk.svg"></a></li>
+                                    <li><a class="social-button" href="#" aria-label="Техномарт в фэйсбуке"><img src="img/svg/icon-fb.svg"></a></li>
+                                    <li><a class="social-button" href="#" aria-label="страница в инстраграме"><img src="img/svg/icon-insta.svg"></a></li>
                                    </ul>
                                  <div>
                                 <p class="feedback">
                                  <b>Обратная связь:</b>
-                                    <a class="button" href="mailto:htmlacademy.ru@mail.ru" aria-label="электронная почта Техномарт">htmlacademy.ru@mail.ru</a>
+                                    <a class="button" href="mailto:htmlacademy.ru@mail.ru" aria-label="электронная почта Техномарт">mail@htmlacademy.ru</a>
                                 </p>
                                  <p class="footer-copyright">
                                   <b>Разработано -</b>
@@ -264,7 +274,7 @@
                               </div>
                          </footer>
                          <!-- pop-up начало формы -->
-                            <section>
+                            <section class="login-pop">
                               <h5 class="visually-hidden">Форма отправки</h5>
                                 <form action="https://echo.htmlacademy.ru" method="post">
                                   <label for="name">Ваше имя:</label>
@@ -281,7 +291,7 @@
                             </section>
                          <!-- pop-up конец формы -->   
                          <!-- pop-up начало карты -->  
-                          <section>
+                          <section class="map-pop">
                               <h5 class="visually-hidden">Личный кабинет</h5>
                               <img src="map.png" alt="Адрес компании ул.Большая Конюшенная, 19" >
                               <button type="button" aria-label="Закрыть">Х</button>

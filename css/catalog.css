@@ -2,11 +2,10 @@
 body {
 	margin: 0;	
 	padding: 0;
-
-	font-family: PT Sans Narrow, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 24px;
-	font-weight: 700;
+	font-family: 'Cuprum', 'PT Sans', sans-serif;
+	/*font-size: 18px;
+	line-height: 24px;*/
+	font-weight: 400;
 	color: #000000; 
 	text-transform: none;
 
@@ -24,15 +23,15 @@ img {
 
 a { 
 	text-decoration: none ;
+	color: #000000;
 }
 
 .button {
-	font: inherit;
-
-	text-decoration: center;
+	/*font: inherit;*/
+	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 
 	border: none;
 }
@@ -47,7 +46,6 @@ a {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-
 /*ВЕРХНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ*/
 .main-navigation {
 	font-size: 17px;
@@ -67,11 +65,18 @@ a {
 	color: #000000;
 }
 
+.main-navigation .button-basket {
+	font-size: 17px;
+	line-height: 18px;
+}
+
 .main-navigation .button-basket:active {
 	color: #b2b2b2;
 }
 
 .checkout {
+	font-size: 17px;
+	line-height: 18px;
 	background-color: #63a63e;
 	color: #ffffff;
 }
@@ -97,13 +102,13 @@ a {
 	font-height: 17px;
 	color: #ffffff;
 
-	background-color: #293449;
+	background-color: #32425c; 
 	box-shadow: 0px 5px 0 0 #293449;
 }
 
 .site-navigation .button:focus,
 .site-navigation .button:hover {
-	background-color: #000000; 
+	background-color: #273652; 
 }
 
 .site-navigation .button:active {
@@ -114,11 +119,13 @@ a {
 .background {
 	background-color: #f3f7f9;
 }
-
 /*ЛОГО*/
+
 .logo-tehnomart {
 	background-color: #ee3643;
 	box-shadow: 0px 5px 0 0 #b52933;
+	width: 220px;
+	height: 47px;
 }
 
 .logo-tehnomart:hover,
@@ -126,9 +133,11 @@ a {
 	background-color: #ca2c37;
 	box-shadow: 0px 5px 0 0 #8e1e26;
 }
-
 /*ОПИСАНИЕ ИНТЕРНЕТ МАГАЗИНА*/
 .header-info {
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
 	color: #ee3643;
 }
 /*КОНТАКТЫ МАГАЗИНА*/
@@ -157,7 +166,7 @@ a {
  	list-style: none;
  }
 
- .user-navigation a{
+ .user-navigation a {
  	color: #000000;
  	background-color: #ffffff;
  }
@@ -181,13 +190,19 @@ a {
 	background-color: #f2f6f8;
 }
 
-.main-catalog h2 {  
+.main-products h2 {  
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
 	text-transform: uppercase;
 }
 /*ФИЛЬТР*/
+.main-products legend {
+	font-family: 'PS Sans', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   	display: none;
@@ -222,26 +237,26 @@ input[type="checkbox"]:checked +label::before {
 }
  
  /*СПИСОК ТОВАРОВ*/
-.popular-products ul {
+.list-products ul {
 	list-style: none;
 }
 
-.popular-products li {
+.list-products li {
 	border: 1px solid #eaeaea;
 	border-radius: 5px;
 }
 
-.popular-products li:focus,
-.popular-products li:hover {
+.popular-products-active li:focus,
+.popular-products-active li:hover {
 	box-shadow: 10px 10px 50px 0px #000000;
 }
 
-.popular-products .delete {
+.list-products .delete {
 	text-decoration: line-through;
 	color: #a9a9a9;
 }
 
-.popular-products .price {
+.list-products .price {
 	background-color: #ee3643;
 }
 
@@ -263,6 +278,19 @@ input[type="checkbox"]:checked +label::before {
 .pagination a:active {
 	border: 1px solid #ee3643;
 }
+/*ИНФО*/
+.about h4 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.about p {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
 
 /*ГЛАВНАЯ ФУТЕРА*/
 .footer-nav ul {
@@ -271,6 +299,8 @@ input[type="checkbox"]:checked +label::before {
 /*НАВИГАЦИЯ ПО САЙТУ В ФУТЕРЕ*/
 .footer-nav a {
 	background: none;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .button a:hover,
@@ -307,8 +337,8 @@ input[type="checkbox"]:checked +label::before {
 
 	background-color: #32425c; 
 	background-image: url("img/footer.png");
-	background-position: 0 0;
-	background-image: repeat;	
+	background-position: top center;
+	background-repeat: repeat;	
 }
 /*ВТОРАЯ ЧАСТЬ ФУТЕРА - НИЖНЯЯ*/
 .second-footer {
@@ -317,7 +347,7 @@ input[type="checkbox"]:checked +label::before {
 	background-color: #293449; 
 	background-image: url("img/second-footer.png");
 	background-position: 0 0;
-	background-image: repeat;
+	background-repeat: no-repeat;
 }
 
 .footer-social {
@@ -343,17 +373,23 @@ input[type="checkbox"]:checked +label::before {
 	text-decoration: none;
 }
 
-.social-buttom {
-	color: #ffffff;
+.footer-social img {
+	background-color: #212a3a;
+	border: 10px solid #212a3a;
+	border-radius: 40px;
 }
 
-.social-buttom:hover,
-.social-buttom:focus {
-	color: #ee3643;
+.footer-social img:hover,
+.footer-social img:focus {
+	background-color: #ee3643;
+	border: 10px solid #ee3643;
+	border-radius: 40px;
 }
 
-.social-buttom:active {
-	color: #ee3643;
+.footer-social img:active {
+	background-color: #ee3643;
+	border: 10px solid #ee3643;
+	border-radius: 40px;
 }
 
 .footer-copyright {
@@ -364,4 +400,14 @@ input[type="checkbox"]:checked +label::before {
 .footer-copyright .button:active {
 	color: #ee3643;
 	text-decoration: none;
+}
+
+.feedback b,
+.footer-copyright b {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.login-pop {
+	display: none;
 }

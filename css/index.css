@@ -2,11 +2,10 @@
 body {
 	margin: 0;	
 	padding: 0;
-
-	font-family: PT Sans Narrow, Arial, sans-serif;
-	font-size: 14px;
+	font-family: 'Cuprum', 'PT Sans', sans-serif;
+	font-size: 18px;
 	line-height: 24px;
-	font-weight: 700;
+	font-weight: 400;
 	color: #000000; 
 	text-transform: none;
 
@@ -27,22 +26,15 @@ a {
 }
 
 .button {
-	font: inherit;
-
-	text-decoration: center;
+	/*font: inherit;*/
+	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 
 	border: none;
 }
 
-/*.button:hover,
-.button:focus,
-.button:active {
-	background-color: #663d15; 
-}
-*/
 .visually-hidden{
 	position: absolute;
 	width: 1px;
@@ -72,11 +64,18 @@ a {
 	color: #000000;
 }
 
+.main-navigation .button-basket {
+	font-size: 17px;
+	line-height: 18px;
+}
+
 .main-navigation .button-basket:active {
 	color: #b2b2b2;
 }
 
 .checkout {
+	font-size: 17px;
+	line-height: 18px;
 	background-color: #63a63e;
 	color: #ffffff;
 }
@@ -102,13 +101,13 @@ a {
 	font-height: 17px;
 	color: #ffffff;
 
-	background-color: #293449;
+	background-color: #32425c; 
 	box-shadow: 0px 5px 0 0 #293449;
 }
 
 .site-navigation .button:focus,
 .site-navigation .button:hover {
-	background-color: #000000; 
+	background-color: #273652; 
 }
 
 .site-navigation .button:active {
@@ -120,9 +119,12 @@ a {
 	background-color: #f3f7f9;
 }
 /*ЛОГО*/
+
 .logo-tehnomart {
 	background-color: #ee3643;
 	box-shadow: 0px 5px 0 0 #b52933;
+	width: 220px;
+	height: 47px;
 }
 
 .logo-tehnomart:hover,
@@ -132,6 +134,9 @@ a {
 }
 /*ОПИСАНИЕ ИНТЕРНЕТ МАГАЗИНА*/
 .header-info {
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
 	color: #ee3643;
 }
 /*КОНТАКТЫ МАГАЗИНА*/
@@ -160,7 +165,7 @@ a {
  	list-style: none;
  }
 
- .user-navigation a{
+ .user-navigation a {
  	color: #000000;
  	background-color: #ffffff;
  }
@@ -175,9 +180,12 @@ a {
  	color: #b2b2b2;
  }
 /*ПОПУЛЯРНЫЕ ТОВАРЫ */
- .back-popular-products h2 {
+ .list-products h2,
+ .popular-products {
  	font-size: 30px;
  	line-height: 30px;
+ 	font-weight: 400;
+ 	text-transform: uppercase;
 
  	color: #32425c;
  }
@@ -189,9 +197,23 @@ a {
  	background-repeat: no-repeat;
  }
 
-.button-popular-products {
+.list-products .button-popular-products a,
+.button-popular-products,
+.list-products .button-popular-products,
+.about .button-popular-products,
+.contacts a {
+	font: inherit;
+	width: 253px;
+	height: 38px;
 	background-color: #ee3643;
 	border-radius: 5px;
+	
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	
+	color: #ffffff;
 }
 
 .button-popular-products:focus,
@@ -203,25 +225,46 @@ a {
 	background-color: #ba2732;
 }
 
-.popular-products .delete {
+.list-products a {
+	color: #000000;
+	font-weight: bold;
+}
+
+.list-products .delete {
 	text-decoration: line-through;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+
 	color: #a9a9a9;
 }
 
-.popular-products .price {
+.list-products .price {
+	display: inline;
 	background-color: #ee3643;
+	background-image: url("img/svg/red-button.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+
+	color: #ffffff;
 }
 
-.popular-products ul{
+.list-products ul{
 	list-style: none;
 }
 
-.popular-products li {
+.list-products li {
 	border: 1px solid #eaeaea;
 }
 
-.popular-products li:focus,
-.popular-products li:hover {
+.list-productsli:focus,
+.list-products li:hover {
 	box-shadow: 10px 10px 50px 0px #000000;
 }
 
@@ -233,10 +276,33 @@ a {
 	box-shadow: 5px 5px 30px 0px #000000;
 	opacity: 0.5;
 }
+
 /* О НАС*/
+.contacts h2,
+.about h2,
+.service h2 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
 .about  ul {
 	list-style: none;
 }
+
+.about p,
+.contacts p,
+.service p {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.about .list {
+	font-size: 18px;
+	line-height: 20px;
+}
+
 /*ГЛАВНАЯ ФУТЕРА*/
 .footer-nav ul {
 	list-style: none;
@@ -244,6 +310,8 @@ a {
 /*НАВИГАЦИЯ ПО САЙТУ В ФУТЕРЕ*/
 .footer-nav a {
 	background: none;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .button a:hover,
@@ -280,8 +348,8 @@ a {
 
 	background-color: #32425c; 
 	background-image: url("img/footer.png");
-	background-position: 0 0;
-	background-image: repeat;	
+	background-position: top center;
+	background-repeat: repeat;	
 }
 /*ВТОРАЯ ЧАСТЬ ФУТЕРА - НИЖНЯЯ*/
 .second-footer {
@@ -290,7 +358,7 @@ a {
 	background-color: #293449; 
 	background-image: url("img/second-footer.png");
 	background-position: 0 0;
-	background-image: repeat;
+	background-repeat: no-repeat;
 }
 
 .footer-social {
@@ -316,17 +384,23 @@ a {
 	text-decoration: none;
 }
 
-.social-buttom {
-	color: #ffffff;
+.footer-social img {
+	background-color: #212a3a;
+	border: 10px solid #212a3a;
+	border-radius: 40px;
 }
 
-.social-buttom:hover,
-.social-buttom:focus {
-	color: #ee3643;
+.footer-social img:hover,
+.footer-social img:focus {
+	background-color: #ee3643;
+	border: 10px solid #ee3643;
+	border-radius: 40px;
 }
 
-.social-buttom:active {
-	color: #ee3643;
+.footer-social img:active {
+	background-color: #ee3643;
+	border: 10px solid #ee3643;
+	border-radius: 40px;
 }
 
 .footer-copyright {
@@ -337,4 +411,15 @@ a {
 .footer-copyright .button:active {
 	color: #ee3643;
 	text-decoration: none;
+}
+
+.feedback b,
+.footer-copyright b {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.map-pop,
+.login-pop {
+	display: none;
 }

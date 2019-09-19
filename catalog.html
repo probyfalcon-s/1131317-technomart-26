@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-     <link href="css/catalog.css" rel="stylesheet">
+     <link href="css/index.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
 
    <body>
@@ -13,10 +14,13 @@
       <img class="logo-tehnomart" src="img/svg/logo-technomart.svg" alt="лого Техномарт">
      </a>
         <form action="https://echo.htmlacademy.ru" method="post">
+         <img src="img/svg/icon-search.svg">
          <input type="text" placeholder="Поиск">
           <button class="button search" type="submit" aria-label="поиск по странице"></button>
         </form>
+       <img src="img/svg/icon-bookmark.svg">
        <a class="button button-basket" href="#">Закладки</a>
+       <img src="img/svg/icon-cart.svg">
        <a class="button button-basket" href="#">Корзина</a>
        <a class="button checkout" href="#">Оформить заказ</a>
       </nav>
@@ -30,14 +34,20 @@
               
        <div class="header-contacts">
         <ul>
-          <li class="contacts-phone">+7 (812) 555-05-55</li>
+         <li class="contacts-phone">
+          <img src="img/svg/icon-phone.svg">+7 (812) 555-05-55</li>
           <li class="contacts-address">г.Санкт-Петербург, ул.Конюшенная, д.19/8</li>
         </ul>
        </div>
         
         <ul class="user-navigation">
-         <li><a class="button"aria-label="вход в личный кабинет">Войти</a></li>
-          <li><a class="button" aria-label="регистрация личного кабинета">Регистрация</a></li>
+         <li>
+          <img src="img/svg/icon-login.svg">
+          <a class="button"aria-label="вход в личный кабинет">Войти</a>
+        </li>
+          <li>
+            <a class="button" aria-label="регистрация личного кабинета">Регистрация</a>
+          </li>
         </ul>
 
 
@@ -55,8 +65,8 @@
     </header>
     <div>
 
-        <main class="main-catalog">
-         <article>
+        <main class="list-products">
+         <article class="main-products">
          	<div class="breadcrumbs">
 	    <h2 class="visually-hidden">breadcrumbs</h2>
 	     <ul>
@@ -97,7 +107,7 @@
 		     </form>
 	      </section>
 
-	       <section class="popular-products popular-products-active">
+	       <section class="list-products">
 	        <h2 class="visually-hidden">Список товаров</h2>
 	          <h3>Сортировка</h3>
 			   <ul>
@@ -105,6 +115,7 @@
 			    <li>по типу</li>
 			    <li>по фунционалу</li>
 		       </ul>
+		       <div class="popular-products-active">
 		        <ul>
 			    <li><a href="#">
 			      		<img src="img/Perforator_2.jpg" alt="BOSCH BFG 3000">
@@ -166,6 +177,7 @@
 			     								<h3><a href="#">Перфоратор BOSCH BFG 2000<a></h3>
 			      									<p class="price">15500 Р.</p>
 		        						</li>
+		        					</div>
 		       </ul>
 	        </section>
 
@@ -180,9 +192,9 @@
 			   </ul>
 	        </section>
 
-	         <section>
-		      <p><h4>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h4>
-                Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+	         <section class="about">
+		      	<h4>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h4>
+                <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br>
                 ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 	          </section>
@@ -214,14 +226,14 @@
                                   <div class="footer-social">
                                   <h3 class="visually-hidden">Соцсети</h3>
                                    <ul>
-                                    <li><a class="social-button" href="#" aria-label="Техномарт вконтакте">VK</a></li>
-                                    <li><a class="social-button" href="#" aria-label="Техномарт в фэйсбуке">facebook</a></li>
-                                    <li><a class="social-button" href="#" aria-label="страница в инстраграме">instagram</a></li>
+                                   <li><a class="social-button" href="#" aria-label="Техномарт вконтакте"><img src="img/svg/icon-vk.svg"></a></li>
+                                    <li><a class="social-button" href="#" aria-label="Техномарт в фэйсбуке"><img src="img/svg/icon-fb.svg"></a></li>
+                                    <li><a class="social-button" href="#" aria-label="страница в инстраграме"><img src="img/svg/icon-insta.svg"></a></li>
                                    </ul>
                                  <div>
                                 <p class="feedback">
                                  <b>Обратная связь:</b>
-                                    <a class="button" href="mailto:htmlacademy.ru@mail.ru" aria-label="электронная почта Техномарт">htmlacademy.ru@mail.ru</a>
+                                    <a class="button" href="mailto:htmlacademy.ru@mail.ru" aria-label="электронная почта Техномарт">mail@htmlacademy.ru</a>
                                 </p>
                                  <p class="footer-copyright">
                                   <b>Разработано -</b>
@@ -231,7 +243,7 @@
                               </div>
                          </footer>
   		 	<!-- pop-up корзины -->  
-             <section>
+             <section class="login-pop">
                <h4 class="visually-hidden">Личный кабинет</h4>
                		<p>Товар добавлен в корзину!</p>
                			<form action="https://echo.htmlacademy.ru" method="post">

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-     <link href="css/index.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
 
@@ -65,20 +65,16 @@
     </header>
     <div>
 
-        <main class="list-products">
-         <article class="main-products">
-         	<div class="breadcrumbs">
-	    <h2 class="visually-hidden">breadcrumbs</h2>
-	     <ul>
-	      <li class="visually-hidden"><a href="index.html">Главная</a></li>
-		  <li><a href="#"> Каталог</a></li>
-		  <li><a href="#"> Инструмент</a></li>
-		  <li><a href="#"> Перфораторы</a></li>
+        <main class="catalog">
+         <article class="catalog-main">
+        <h2 class="visually-hidden">breadcrumbs</h2>
+	      <ul class="list-breadcrumbs">
+	      <li><a class="bread" href="index.html">Главная</a></li>
+		  <li><a class="bread" href="#"> Каталог</a></li>
+		  <li><a class="bread" href="#"> Инструмент</a></li>
+		  <li><a class="bread" href="#"> Перфораторы</a></li>
 	     </ul>
-			</div>
-			<div class="background-h">
-	      <h2>Перфораторы</h2>
-	      	</div>
+		 <h2>Перфораторы</h2>
 	      <section>
 	       <h2 class="visually-hidden">Фильтр товаров</h2>
 		    <form action="https://echo.htmlacademy.ru" method="post">
@@ -107,15 +103,15 @@
 		     </form>
 	      </section>
 
-	       <section class="list-products">
+	       <section class="catalog-list">
 	        <h2 class="visually-hidden">Список товаров</h2>
 	          <h3>Сортировка</h3>
-			   <ul>
+			   <ul class="sorting">
 			    <li>по цене</li>
 			    <li>по типу</li>
 			    <li>по фунционалу</li>
 		       </ul>
-		       <div class="popular-products-active">
+		       <div class="catalog-products">
 		        <ul>
 			    <li><a href="#">
 			      		<img src="img/Perforator_2.jpg" alt="BOSCH BFG 3000">
@@ -192,7 +188,7 @@
 			   </ul>
 	        </section>
 
-	         <section class="about">
+	         <section class="about-catalog">
 		      	<h4>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h4>
                 <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br>

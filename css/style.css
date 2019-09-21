@@ -45,13 +45,344 @@ a {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+/*======================СЕТКА НАЧАЛО===============*/
+/*===========HEADER============*/
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-header {
+	/*margin-bottom: 100px;*/
+}
+
+.main-navigation {
+	display: flex;
+}
+
+.logo-tehnomart {
+	display: block;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+	margin-top: 0;
+	background-color: #293449;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-wrapper {
+	width: 100%;
+	margin-top: 0px;
+	background-color: #f3f7f8;
+	padding-bottom: 60px;
+}
+
+.main-header-info {
+	display: flex;
+	flex-direction: row;
+}
+/*========ЛИЧНЫЙ КАБИНЕТ===============*/
+.personal-user {
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.header-info {
+	margin-left: 40px;
+}
+/*========НАВИГАЦИЯ ПО САЙТУ===============*/
+.site-navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+
+	height: 60px;
+	width: 940px;
+	margin: 0;
+	padding: 0;
+}
+
+.site-navigation-wrapper {
+	width: 100%;
+	margin-top: 10px;
+	background-color: #32425c;
+	box-shadow: 0px 5px 0 0 #293449;
+}
+
+.user-navigation {
+	width: 140px;
+	margin: 0;
+	padding: 0;
+}
+
+/*==================ТОВАРЫ===================*/
+/*============ЗАДНЯЯ ОБЛОЖКА===========*/
+.list-products-wrapper {
+	display: flex;
+	background-color: #f9f5f0;
+	width: 940px;
+	height: 90px;
+	margin-bottom: 20px;
+}
+/*=========КРАСНЫЕ КНОПКИ==============*/
+.list-products-wrapper .button-red {
+	margin-top: 30px ;
+	margin-left: auto;
+}
+
+.list-products-wrapper h2 {
+	margin-left: 20px;
+	margin-top: 30px;
+}
+/*=============ПОПУЛЯРНЫЕ ТОВАРЫ==========*/
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.features-list a,
+.features-list li,
+.features-list img,
+.features-list h3 {
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.feature-item {
+ 	width: 218px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+}
+
+/*==========ПРОИЗВОДИТЕЛИ=============*/
+.fabricator-list {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.fabricator-item img {
+	display: block;
+	align-items: center;
+}
+
+.fabricator-item {
+  display: flex;
+  justify-content: space-between; 
+  width: 220px;
+  text-align: center;
+}
+/*===========ИНФОРМАЦИЯ В КОЛОНКАХ============*/
+.index-columns {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 0px;
+	margin-bottom: 25px;
+}
+
+.about {
+	width: 535px;
+}
+
+.contacts {
+	width: 300px;
+}
+
+/*=========FOOTER СЕТКА=================*/
+
+.main-footer {
+	/*margin-top: 100px;*/
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-nav-wrapper {
+	width: 100%;
+	background-color: #32425c;
+}
+
+.site-navigation-footer {
+	width: 940px;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-button {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+/*=========КОПИРАЙТИНГ==============*/
+.footer-second {
+	padding: 60px 0;
+	margin-top: 65px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.second-footer-wrapper {
+	width: 100%;
+	background-color: #293449;
+}
+
+.footer-info {
+	margin-left: 450px;
+	margin-right: 450px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-security {
+	width: 320px;
+	margin: 0;
+	margin-right: 80px;
+	margin-top: 40px;
+}
+/*=========СОЦ СЕТИ==============*/
+.footer-social {
+	width: 100px;
+	display: inline
+}
+
+.feedback {
+	width: 150px;
+	margin-top: 40px;
+}
+
+.footer-copyright {
+	width: 150px;
+	margin: 0;
+	margin-top: 40px;
+}
+ /*========СЕТКА КАТАЛОГА - НАЧАЛО===================================*/
+.catalog-list ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.catalog-list,
+.catalog-list li,
+.catalog-list img,
+.catalog-list h3 {
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.catalog-item {
+ 	width: 218px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+}
+
+.index-colums-catalog {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}	
+
+.catalog-column {
+	width: 220px;
+	display: flex;
+	flex-direction: column;
+}
+
+.catalog-column-2 {
+	width: 700px;
+	margin-left: 50px;
+}
+
+.list-breadcrumbs {
+	display: flex;
+}
+
+.catalog-main-wrapper {
+	background-color: #f2f6f8;
+	width: 940px;
+	height: 90px;
+	margin-top: 50px;
+}
+
+.catalog-column {
+	border-style: none;
+}
+
+.catalog-main-wrapper h2 {
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+.filter-1-wrapper {
+	background-color: #f7f3ec ;
+	width: 220px;
+	height: 38px;
+	margin-bottom: 20px;
+}
+
+.sorting-wrapper {
+	background-color: #f7f3ec;
+	width: 700px;
+	height: 38px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.sorting-wrapper h3 {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.sorting-wrapper li {
+	margin-right: 50px;
+	margin-top: 10px;
+}
+
+.pagination {
+	display: inline-block;
+	margin-left: 220px;
+}
+
+.about-catalog-wrapper {
+	width: 100%;
+	background-color: #f2f6f8;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.about-catalog {
+	margin-left: 500px;
+}
+/*=============СЕТКА КАТАЛОГА - КОНЕЦ====================*/
+/*====================СЕТКА КОНЕЦ=============*/
 /*ВЕРХНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ*/
 .main-navigation {
 	font-size: 17px;
 	font-height: 18px;
 	color: #ffffff;
-
-	background-color: #293449;
 }
 
 .main-navigation .search {
@@ -78,6 +409,9 @@ a {
 	line-height: 18px;
 	background-color: #63a63e;
 	color: #ffffff;
+
+	width: 150px;
+	height: 42px;
 }
 
 .checkout:hover,
@@ -100,9 +434,6 @@ a {
 	font-size: 17px;
 	font-height: 17px;
 	color: #ffffff;
-
-	background-color: #32425c; 
-	box-shadow: 0px 5px 0 0 #293449;
 }
 
 .site-navigation .button:focus,
@@ -113,10 +444,6 @@ a {
 .site-navigation .button:active {
 	background-color: #1d2739; 
 	color: #b2b2b2;
-}
-
-.background {
-	background-color: #f3f7f9;
 }
 /*ЛОГО*/
 
@@ -146,6 +473,8 @@ a {
 }
 
 .contacts-phone {
+	width: 270px;
+	height: 45px;
 	font-size: 21px;
 	line-height: 21px;
 
@@ -161,14 +490,22 @@ a {
 	color: #32425c;
 }
 /*ЛИЧНЫЙ КАБИНЕТ*/
- .user-navigation {
+
+.personal-user {
+	display: inline-block;
+	
+}
+
+.personal-user ul {
  	list-style: none;
  }
 
- .user-navigation a {
+.user-navigation a {
  	color: #000000;
  	background-color: #ffffff;
- }
+ 	
+ 	padding: 10px 5px;
+}
 
  .user-navigation .button:focus,
  .user-navigation .button:hover {
@@ -191,18 +528,17 @@ a {
  	color: #32425c;
  }
 
-.back-popular-products {
- 	background-color: #f9f5f0;
- 	background-image: url("img/back-popular-products.png");
- 	background-position: top center;
- 	background-repeat: no-repeat;
+ .popular-products-active li {
+ 	width: 218px;
+ 	height: 170;
  }
 
-.list-products .button-popular-products a,
-.button-popular-products,
-.list-products .button-popular-products,
-.about .button-popular-products,
+.list-products .button-red a,
+.button-red,
+.list-products .button-red,
+.about .button-red,
 .contacts a {
+	display: block;
 	font: inherit;
 	width: 253px;
 	height: 38px;
@@ -217,12 +553,12 @@ a {
 	color: #ffffff;
 }
 
-.button-popular-products:focus,
-.button-popular-products:hover {
+.button-red:focus,
+.button-red:hover {
 	background-color: #ca2c37;
 }
 
-.button-popular-products:active {
+.button-red:active {
 	background-color: #ba2732;
 }
 
@@ -274,6 +610,11 @@ a {
 	background-image: none;
 }*/
 /*ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
+.popular-manufacturer li {
+	width: 220px;
+	height: 145px;
+}
+
 .popular-manufacturer li:active {
 	box-shadow: 5px 5px 30px 0px #000000;
 	opacity: 0.5;
@@ -305,11 +646,15 @@ a {
 	line-height: 20px;
 }
 /*=============ГЛАВНАЯ СТРАНИЦА -----КОНЕЦ======================*/
- /*=======КАТАЛОГ====== НАЧАЛО*/
+ /*=======КАТАЛОГ====== НАЧАЛО======================*/
  /*breadcrumbs*/
   .list-breadcrumbs {
+	font-family: 'PT Sans', sans-serif;
 	list-style: none;
 	color: #000000;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 18px;
 }
 .list-breadcrumbs a {
 	color: #000000;
@@ -325,11 +670,6 @@ a {
 }
 
 /*H2 ПЕРФОРАТОРЫ*/
-
-.background-h {
-	background-color: #f2f6f8;
-}
-
 .catalog h2 {  
 	font-size: 30px;
 	line-height: 30px;
@@ -399,27 +739,43 @@ input[type="checkbox"]:checked +label::before {
 .catalog-products a {
 	color: #000000;
 }
+/*сортировка*/
+.sorting-wrapper h3,
+.sorting-wrapper li {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
 
 
 
 /*ПАГИНАЦИЯ*/
-.pagination li {
-	list-style: none;
-	border: 1px solid #b2b2b2;
-}
-
 .pagination a {
+    padding: 8px 16px;
+    margin: 0 4px;
+    font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	background-color: #ffffff;
 	color: #000000;
+	border: 1px solid #b2b2b2;
+	border-radius: 5px;
+	text-transform: uppercase;
 }
 
 .pagination a:hover,
 .pagination a:focus {
-	border: 1px solid #999696;
+	background-color: #999696;
+	color: #ffffff;
 }
 
 .pagination a:active {
-	border: 1px solid #ee3643;
+	background-color: #ee3643;
+	color: #ffffff;
 }
+
 /*ИНФО*/
 .about-catalog h4 {
 	font-size: 30px;
@@ -433,7 +789,7 @@ input[type="checkbox"]:checked +label::before {
 	font-size: 13px;
 	line-height: 24px;
 }
- /*========КАТАЛОГ =======КОНЕЦ*/
+ /*========КАТАЛОГ =======КОНЕЦ===================*/
 
 /*ГЛАВНАЯ ФУТЕРА*/
 .footer-nav ul {
@@ -477,20 +833,10 @@ input[type="checkbox"]:checked +label::before {
 
 .main-footer {
 	color: #ffffff;
-
-	background-color: #32425c; 
-	background-image: url("img/footer.png");
-	background-position: top center;
-	background-repeat: repeat;	
 }
 /*ВТОРАЯ ЧАСТЬ ФУТЕРА - НИЖНЯЯ*/
 .second-footer {
 	color: #ffffff;
-
-	background-color: #293449; 
-	background-image: url("img/second-footer.png");
-	background-position: 0 0;
-	background-repeat: no-repeat;
 }
 
 .footer-social {

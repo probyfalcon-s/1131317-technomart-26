@@ -251,16 +251,16 @@ a {
 .second-footer-wrapper {
 	width: 100%;
 	background-color: #293449;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer-info {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	margin: 0;
-	padding: 0;
 	width: 940px;
-	margin-left: 460px;
 }
 
 .footer-security {

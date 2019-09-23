@@ -31,7 +31,6 @@ a {
 	color: #ffffff;
 	vertical-align: middle;
 	
-
 	border: none;
 }
 
@@ -86,22 +85,15 @@ a {
 
 .main-header-info {
 	display: flex;
-	flex-direction: row;
-}
-/*========ЛИЧНЫЙ КАБИНЕТ===============*/
-.personal-user {
-	margin-left: 20px;
-	margin-top: 40px;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.header-info {
-	margin-left: 40px;
-}
 /*========НАВИГАЦИЯ ПО САЙТУ===============*/
 .site-navigation {
 	display: flex;
 	justify-content: space-around;
-	align-items: stretch;
+	align-items: center;
 
 	height: 60px;
 	width: 940px;
@@ -117,9 +109,9 @@ a {
 }
 
 .user-navigation {
-	width: 140px;
-	margin: 0;
-	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*==================ТОВАРЫ===================*/
@@ -201,75 +193,97 @@ a {
 }
 
 /*=========FOOTER СЕТКА=================*/
-
-.main-footer {
-	/*margin-top: 100px;*/
-}
-
 .footer-nav {
 	display: flex;
 	flex-direction: column;
+}
+.site-navigation-footer {
+	width: 940px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .footer-nav-wrapper {
 	width: 100%;
 	background-color: #32425c;
 }
-
-.site-navigation-footer {
-	width: 940px;
-	margin: 0;
-	padding: 0;
+.address {
+	display: flex;
+	flex-direction: row;
+	text-align: flex-start; 
 }
+
 
 .footer-button {
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 570px;
 }
-/*=========КОПИРАЙТИНГ==============*/
-.footer-second {
-	padding: 60px 0;
-	margin-top: 65px;
+.site-navigation-footer a {
+	margin-left: 30px;
+	margin-right: 20px;
+}
 
+/*========ВТОРАЯ ЧАСТЬ ФУТЕРА=======*/
+.second-footer {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
+.footer-social ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-social ul li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+
+/*=========КОПИРАЙТИНГ==============*/
 .second-footer-wrapper {
 	width: 100%;
 	background-color: #293449;
 }
 
 .footer-info {
-	margin-left: 450px;
-	margin-right: 450px;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	width: 940px;
+	margin-left: 460px;
 }
 
 .footer-security {
-	width: 320px;
-	margin: 0;
-	margin-right: 80px;
-	margin-top: 40px;
+	display: flex;
 }
 /*=========СОЦ СЕТИ==============*/
 .footer-social {
-	width: 100px;
-	display: inline
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .feedback {
-	width: 150px;
-	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .footer-copyright {
-	width: 150px;
-	margin: 0;
-	margin-top: 40px;
-}
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+ }
  /*========СЕТКА КАТАЛОГА - НАЧАЛО===================================*/
 .catalog-list ul {
   display: flex;
@@ -378,6 +392,21 @@ a {
 }
 /*=============СЕТКА КАТАЛОГА - КОНЕЦ====================*/
 /*====================СЕТКА КОНЕЦ=============*/
+/*====================ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ=================*/
+.main-header .button-basket::before {
+	content: url("img/svg/icon-bookmark.svg");
+}
+
+.main-header .button-basket-2::before {
+	content: "";
+	background-image: url("img/svg/icon-cart.svg");
+}
+
+.main-header .search::before {
+	content: "";
+	background-image: url("img/svg/icon-search.svg");
+}
+
 /*ВЕРХНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ*/
 .main-navigation {
 	font-size: 17px;
@@ -396,22 +425,38 @@ a {
 }
 
 .main-navigation .button-basket {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 17px;
 	line-height: 18px;
+}
+
+.main-navigation .button-basket-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .main-navigation .button-basket:active {
 	color: #b2b2b2;
 }
 
+.main-navigation .button-basket-2:active {
+	color: #b2b2b2;
+}
+
 .checkout {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 17px;
 	line-height: 18px;
 	background-color: #63a63e;
 	color: #ffffff;
 
 	width: 150px;
-	height: 42px;
+	height: 48px;
 }
 
 .checkout:hover,
@@ -472,6 +517,12 @@ a {
 	text-align: center;
 }
 
+.header-contacts ul li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .contacts-phone {
 	width: 270px;
 	height: 45px;
@@ -480,7 +531,6 @@ a {
 
 	color: #ee3643;
 	border: 2px solid #ffffff;
-
 }
 
 .contacts-address {
@@ -492,8 +542,9 @@ a {
 /*ЛИЧНЫЙ КАБИНЕТ*/
 
 .personal-user {
-	display: inline-block;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .personal-user ul {
@@ -501,11 +552,11 @@ a {
  }
 
 .user-navigation a {
- 	color: #000000;
+	color: #000000;
  	background-color: #ffffff;
- 	
- 	padding: 10px 5px;
-}
+ 	margin-right: 10px;
+ 	padding: 10px 15px;
+ }
 
  .user-navigation .button:focus,
  .user-navigation .button:hover {
@@ -538,8 +589,9 @@ a {
 .list-products .button-red,
 .about .button-red,
 .contacts a {
-	display: block;
-	font: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;;
 	width: 253px;
 	height: 38px;
 	background-color: #ee3643;
@@ -792,7 +844,7 @@ input[type="checkbox"]:checked +label::before {
  /*========КАТАЛОГ =======КОНЕЦ===================*/
 
 /*ГЛАВНАЯ ФУТЕРА*/
-.footer-nav ul {
+.footer-button {
 	list-style: none;
 }
 /*НАВИГАЦИЯ ПО САЙТУ В ФУТЕРЕ*/

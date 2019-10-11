@@ -399,7 +399,7 @@ a {
 
 .button-icon .button-basket-2::before {
 	position: absolute;
-	content: url("../img/svg/icon-cart.svg");
+	/*content: url("../img/svg/icon-cart.svg");*/
 	top: 0px;
 	left: 142px;
 	width: 14px;
@@ -581,7 +581,6 @@ a {
 	justify-content: flex-end;
 	align-items: center;
 	margin-top: -20px;
-	
 }
 
 .personal-user ul {
@@ -1241,22 +1240,102 @@ a {
 /*=============ГЛАВНАЯ СТРАНИЦА -----КОНЕЦ======================*/
  /*=======КАТАЛОГ====== НАЧАЛО======================*/
 /*красная корзина*/
-.button-icon {
+.button-icon-catalog {
 	position: relative;
 }
 
+.bookmarks-catalog {
+	margin: 0;
+	margin-right: 12px;
+}
 
-.button-basket-2-catalog::before {
+.basket-catalog {
+	/*margin-right: 11px;*/
+	margin: 0;
+	
 	background-color: #ee3643;
-	padding: 14px 20px;
+	padding: 12px 38px;
+}
+
+.basket-catalog::before {
 	position: absolute;
-	content: url("../img/svg/icon-cart.svg");
 	top: 0px;
-	/*left: 100px;*/
+	left: 50px;
+	content: url("../img/svg/icon-cart.svg");
+	
 	width: 14px;
 	height: 16px;
 
 	opacity: 0.3;
+} 
+
+.checkout-catalog {
+	margin: 0;
+	margin-left: -5px;
+
+}
+/*личный-кабинет-каталога*/
+.header-info-catalog {
+	width: 300px;
+}
+
+.header-contacts-catalog {
+	width: 450px;
+}
+
+.user-navigation-catalog a {
+	padding: 0px 0px; 
+}
+
+.user-navigation-catalog {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.personal-user-catalog {
+	margin-top: 10px;
+}
+
+.personal-user-catalog .personal-area {
+	padding: 10px 30px;
+	margin-bottom: 20px;
+}
+
+.personal-user-catalog .personal-area:hover {
+	color: #000000;
+}
+
+.personal-user-catalog .personal-area:active { 
+	color: #cacaca;
+}
+
+.personal-user-catalog .button-area,
+.personal-user-catalog .button-order {
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	border-bottom: 1px solid #32425c;
+	background-color: transparent;
+}
+
+.personal-user-catalog .button-area:focus,
+.personal-user-catalog .button-area:hover,
+.personal-user-catalog .button-order:focus,
+.personal-user-catalog .button-order:hover {
+	color: #ee3643;
+	border-bottom: 1px solid #ee3643;
+}
+
+.personal-user-catalog .button-order:active,
+.personal-user-catalog .button-area:active {
+	color: #cacaca;
+	border-bottom: 1px solid #cacaca;
+}
+
+/*main-catalog*/
+.main-wrapper-catalog {
+	margin-bottom: 0px;
 }
 
  /*breadcrumbs*/
@@ -1267,7 +1346,19 @@ a {
 	text-transform: uppercase;
 	font-size: 13px;
 	line-height: 18px;
+	margin-left: -50px;
+	margin-top: 18px;
 }
+
+.list-breadcrumbs li {
+	margin-right: 10px;
+}
+
+.list-breadcrumbs li img {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
 .list-breadcrumbs a {
 	color: #000000;
 }
@@ -1332,6 +1423,7 @@ input[type="checkbox"]:checked +label::before {
  /*========ТОВАРЫ=======*/
  .catalog-products {
  	margin: 20px auto;
+ 	margin-left: 30px;
  }
 
  .catalog-products ul {
@@ -1341,6 +1433,7 @@ input[type="checkbox"]:checked +label::before {
 	justify-content: space-between;
 	align-items: center;
 }
+
  .catalog-products {
  	font-size: 0;
  }
@@ -1381,7 +1474,6 @@ input[type="checkbox"]:checked +label::before {
 
 .list-breadcrumbs {
 	display: flex;
-	margin-right: 40px;
 }
 
 .catalog-main-wrapper {
@@ -1398,12 +1490,11 @@ input[type="checkbox"]:checked +label::before {
 .sorting-wrapper {
 	background-color: #f7f3ec;
 	
-	margin-left: 40px;
-	width: 720px;
-	height: 60px;
+	margin-left: 70px;
+	width: 700px;
+	height: 40px;
 }
 
-.sorting-wrapper h3, 
 .sorting-wrapper li {
 	display: inline-block;
 }
@@ -1556,12 +1647,85 @@ input[type="checkbox"]:checked +label::before {
 }
 
 /*сортировка*/
-.sorting-wrapper h3,
 .sorting-wrapper li {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
+}
+
+.sorting a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.sorting {
+	margin: 0;
+	margin-top: 8px;
+	margin-left: -20px;
+}
+
+.sorting li:first-child {
+	margin-right: 135px;
+}
+
+
+.sorting li:nth-child(2) a {
+	margin-right: 65px;
+	color: #ee3643;
+}
+
+.sorting li:nth-child(3) a {
+	margin-right: 65px;
+	color: #b2b2b2;
+	border-bottom: 1px dotted #ee3643;
+}
+
+.sorting li:nth-child(4) a {
+	margin-right: 45px;
+	color: #b2b2b2;
+	border-bottom: 1px dotted #ee3643;
+}
+
+.sorting li:nth-child(2) a:focus,
+.sorting li:nth-child(2) a:hover,
+.sorting li:nth-child(3) a:focus,
+.sorting li:nth-child(3) a:hover,
+.sorting li:nth-child(4) a:focus,
+.sorting li:nth-child(4) a:hover {
+	color: #000000;
+	border-bottom: 1px solid #ee3643;
+}
+
+.sorting li:nth-child(2) a:active,
+.sorting li:nth-child(3) a:active,
+.sorting li:nth-child(4) a:active {
+	color: #ee3643;
+	border: none;
+}
+
+.sorting li:nth-child(5) {
+	margin-right: 20px;
+}
+
+.sorting li:nth-child(5) path {
+	fill: #ee3643;
+}
+
+.sorting li:nth-child(6) path {
+	fill: #c5c5c5;
+}
+
+.sorting li:nth-child(5):focus path,
+.sorting li:nth-child(5):hover path,
+.sorting li:nth-child(6):focus path,
+.sorting li:nth-child(6):hover path  {
+	fill: #000000;
+}
+
+.sorting li:nth-child(5):active path,
+.sorting li:nth-child(6):active path {
+	fill: #ee3643;
 }
 
 /*ПАГИНАЦИЯ*/
@@ -1580,14 +1744,18 @@ input[type="checkbox"]:checked +label::before {
 
 .pagination a:hover,
 .pagination a:focus {
-	background-color: #999696;
-	color: #ffffff;
+	border: 1px solid #999696;
 }
 
 .pagination a:active {
+	border: 1px solid #ee3643;
+}
+
+.pagination .current-pagination {
 	background-color: #ee3643;
 	color: #ffffff;
 }
+
 
 /*ИНФО*/
 .about-catalog h4 {
@@ -1892,4 +2060,8 @@ textarea::placeholder {
 	position: relative;
 	z-index: 2;
 	border: none;
+}
+/*pop up каталога*/
+.login-pop-catalog {
+	display: none;
 }

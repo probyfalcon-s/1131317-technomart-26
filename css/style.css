@@ -314,10 +314,19 @@ a {
 	flex-wrap: wrap;
 }
 
+.feedback b,
+.footer-copyright b {
+	font-weight: 400;
+}
+
 .footer-copyright {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+}
+
+ .footer-copyright  b {
+ 	text-align: left;
  }
 /*====================СЕТКА КОНЕЦ=============*/
 /*====================ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ=================*/

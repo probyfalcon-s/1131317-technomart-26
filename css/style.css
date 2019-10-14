@@ -680,34 +680,62 @@ a {
 	background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
-.block-1 a {
+.block-1 a,
+.block-5 a {
 	background-color: #e5ac40;
+}
+
+.block-1 a:hover,
+.block-1 a:focus,
+.block-5 a:hover,
+.block-5 a:focus  {
+	background-color: #c49437;
+}
+
+.block-1 a:active,
+.block-5 a:active {
+	background-color: #a37b2e;
 }
 
 .block-2 a {
 	background-color: #35a9cc;
 }
 
+.block-2 a:hover,
+.block-2 a:focus {
+	background-color: #2e94b3;
+}
+
+.block-2 a:active {
+	background-color: #28819c;
+}
+
 .block-3 a {
 	background-color: #c682c2;
+}
+
+.block-3 a:hover,
+.block-3 a:focus {
+	background-color: #a66ca2;
+}
+
+.block-3 a:active {
+	background-color: #915e8e;
 }
 
 .block-4 a {
 	background-color: #80c180;
 }
 
-.block-5 a {
-	background-color: #e5ac40;
-	}
-
-.promo a:hover:not(.button-promo),
-.promo a:focus:not(.button-promo) {
-	background-color: #cccccc;
+.block-4 a:hover,
+.block-4 a:focus {
+	background-color: #71a871;
 }
 
-.promo a:active:not(.button-promo) {
-	background-color: #b2b2b2;
-}	
+.block-4 a:active {
+	background-color: #659465;
+}
+
 
 .promo .block-1 {
 	background-color: #ffbf47;
@@ -885,7 +913,6 @@ a {
 	
 	color: #ffffff;
 }
-
 
 .button-promo:focus,
 .button-promo:hover {

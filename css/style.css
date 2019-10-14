@@ -2098,8 +2098,13 @@ textarea::placeholder {
 	margin-bottom: 13px;
 }
 
-.login-form input:focus {
-  border-color: #663d15;
+.login-form input:focus,
+.login-form input:hover {
+  border-color: #b5b5b5;
+}
+
+.login-form input:active {
+	border-color: #ee3643;
 }
 
 .login-form {
@@ -2122,6 +2127,15 @@ textarea::placeholder {
     font-size: 18px;
     resize: none;
     margin-bottom: 37px;
+}
+
+.login-form textarea:focus,
+.login-form textarea:hover {
+	border-color: #b5b5b5;
+}
+
+.login-form textarea:active {
+	border-color: #ee3643;
 }
 
 .modal-wrapper .button-red {

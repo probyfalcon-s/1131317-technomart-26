@@ -58,7 +58,7 @@
         
               <div class="personal-user personal-user-catalog">
               <ul class="user-navigation user-navigation-catalog">
-                <li>
+                <li class="personal-block">
                   <a class="button button-log-in personal-area" aria-label="личный кабинет"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                     <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
                   </svg>
@@ -110,15 +110,15 @@
             <div class="index-colums-catalog">
 	           <section class="catalog-column">
 	             <h2 class="visually-hidden">Фильтр товаров</h2>
-		            <form action="https://echo.htmlacademy.ru" method="post">
-		              <fieldset>
+		            <form class="filter-catalog" action="https://echo.htmlacademy.ru" method="post">
+		              
                     <div class="filter-1-wrapper">
-		              <legend class="filter-1">Фильтр:</legend>
+		              <div class="filter-1">Фильтр:</div>
                 </div>
                 <label for="rang">Цена</label>
                   <input type="range" min="0"  max="30000" name="range" id="rang" >
                   <output name="sum">25000</output><hr>
-                    <legend class="filter-2">Производители:</legend>
+                    <div class="filter-2">Производители:</div>
                     <label for ="name1">BOSCH</label>
                     <input type="checkbox" value="" id="name1" checked>
                     <label for ="name2">ИНТЕРСКОЛ</label>
@@ -127,14 +127,19 @@
                     <input type="checkbox" value="" id="name3" checked>
                     <label for ="name4">DEWALT</label>
                     <input type="checkbox" value="" id="name4">
-                    <label for ="name5">HITACHI</label><hr>
-                      <legend class="filter-3">ПИТАНИЕ:</legend>
+                    <label for ="name5">HITACHI</label>
+                    <input type="checkbox" value="" id="name5"><hr>
+
+                      <div class="filter-3">ПИТАНИЕ:</div>
+                      
                       <label for ="name-power">Аккумуляторные</label>
                       <input type="radio" name="power" id="name-power" value="" checked>
+
                       <label for ="name-power-2">Сетевые</label>
                       <input type="radio" name="power" id="name-power-2" value="">
+
                       <button class="button-show" type="submit" value="submit" aria-label="кнопка фильтр товаров">Показать</button>
-		              </fieldset>
+		              
 		             </form>
 	         </section>
 

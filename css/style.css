@@ -1620,11 +1620,11 @@ a {
 	padding-bottom: 50px;
 }
 
-.about-catalog {
-	margin-left: 500px;
+.about-catalog-container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
-
-
  .catalog-item {
  	font-size: 16px;
  }

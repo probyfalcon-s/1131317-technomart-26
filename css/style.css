@@ -1296,7 +1296,7 @@ a {
 
 .bookmarks-catalog {
 	margin: 0;
-	margin-right: 12px;
+	margin-right: 0px;
 }
 
 .basket-catalog {
@@ -1304,7 +1304,13 @@ a {
 	margin: 0;
 	
 	background-color: #ee3643;
-	padding: 12px 38px;
+	padding: 12px 34px;
+}
+
+.button-icon-catalog .basket-catalog:focus,
+.button-icon-catalog .basket-catalog:hover,
+.button-icon-catalog .basket-catalog:active {
+	background-color: #ee3643;
 }
 
 .basket-catalog::before {

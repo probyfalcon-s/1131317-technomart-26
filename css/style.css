@@ -1207,9 +1207,13 @@ a {
 }
 
 .service-list a:active,
-.service-menu .current a:active,
-.service-menu .current a {
+.service-menu .current a:active {
  	background-color: #ffffff;
+	color: #000000;
+}
+
+.current .current-delivery-link {
+	background-color: #ffffff;
 	color: #000000;
 }
 
@@ -1225,24 +1229,17 @@ a {
 	display: none;
 }
 
-/*.service-menu .list-delivery .sub-list {
+.service-main .current-delivery {
 	display: block;
-}*/
+}
+
+.current-none {
+	display: none;
+}
 
 .service-show {
 	display: block;
 }
-
-/*.service-menu .list-guarantee:active .sub-menu-2 {
-	display: block;
-}*/
-
-
-/*.service-menu  .list-credit:active .sub-menu-3 {
-	display: block;
-} */
-
-
 
 /*===========================================*/
 .maps {

@@ -1459,11 +1459,15 @@ a {
 /*ФИЛЬТР*/
 
 .main-catalog .catalog-main .catalog-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
 	border: 1px solid #003df5; /*delete*/
 	
 	margin: 0px;
 	padding: 0px;
-	padding-right: 100px;
+	
 
 }
 
@@ -1471,20 +1475,69 @@ a {
 	border: 1px solid #18f500; /*delete*/
 	margin: 0px;
 	padding: 0px;
-	padding-left: -20px;
+	
 }
 
 
 .main-catalog .catalog-main .sorting-wrapper {
 	border: 1px solid #00fff2; /*delete*/
+	margin-left: 10px;
 }
 
 .main-catalog .catalog-main .catalog-products {
 	border: 1px solid #ff0000; /*delete*/
 	margin: 0px;
 	padding: 0px;
-	padding-left: -20px;
-	}
+	
+}
+
+.catalog-products ul {
+	margin-left: -30px;
+	margin-top: 20px;
+}
+
+.filter-1-wrapper {
+	background-color: #f7f3ec;
+	height: 40px;
+	width: 218px;
+	margin-bottom: 20px;
+}
+
+.filter-1 b {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.range-filter {
+	background-color: #f7f3ec;
+	height: 80px;
+	width: 218px;
+	margin-bottom: 70px;
+}
+
+.catalog-column hr {
+    height: 1px;
+    color: #e5e5e5;
+    background: #e5e5e5;
+    font-size: 0;
+    border: 0;
+}
+
+.filter-catalog b:not(.main-filter) {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 800;
+	font-size: 17px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 .catalog-column .filter-catalog {
 	position: relative;
@@ -1496,26 +1549,61 @@ a {
 	display: none;
 }
 
+.filter-catalog input[type="checkbox"] +label,
+.filter-catalog input[type="radio"] +label {
+	display: flex;
+	margin-bottom: 15px;
+	text-align: left;
+
+	font-family: 'PT Sans', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
 .filter-catalog input[type="checkbox"] +label::before {
 	content: url("../img/svg/checkbox-off.svg");
-	display: inline-block;
-	margin-right: 10px;
-	vertical-align: middle;
+	display: flex;
+	flex-direction: row;
+
+  	width: 23px;
+  	height: 23px;
+  
+  
+  	margin-right: 10px;
+  	
 }
 
 .filter-catalog input[type="checkbox"]:checked +label::before {
 	content: url("../img/svg/checkbox-on.svg");
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	
+	width: 26px;
+  	height: 23px;
+  	margin-right: 10px;
 }
+
 
 .filter-catalog input[type="radio"] +label::before {
 	content: url("../img/svg/radio-off.svg");
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+
+	width: 25px;
+  	height: 25px;
+  	margin-right: 10px;
+
 }
 
 .filter-catalog input[type="radio"]:checked +label::before {
 	content: url("../img/svg/radio-on.svg");
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+
+	width: 25px;
+  	height: 25px;
+  	margin-right: 10px;
 }
 
 .filter-catalog .button-show {
@@ -1526,10 +1614,7 @@ a {
 	padding: 10px 30px;
 	border: 1px solid #c5c5c5;
 	border-radius: 5px;
-}
-
-.catalog-column hr {
-	color: #e5e5e5;
+	margin-top: 70px;
 }
 
  /*========ТОВАРЫ=======*/

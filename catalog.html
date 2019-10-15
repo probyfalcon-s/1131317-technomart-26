@@ -113,30 +113,51 @@
 		            <form class="filter-catalog" action="https://echo.htmlacademy.ru" method="post">
 		              
                     <div class="filter-1-wrapper">
-		              <div class="filter-1">Фильтр:</div>
+		              <div class="filter-1">
+                  <b class="main-filter">Фильтр:</b>
                 </div>
-                <label for="rang">Цена</label>
+                </div>
+                <b>Цена</b>
+                <div class="range-filter">
+                
+                <label for="rang"></label>
                   <input type="range" min="0"  max="30000" name="range" id="rang" >
-                  <output name="sum">25000</output><hr>
-                    <div class="filter-2">Производители:</div>
-                    <label for ="name1">BOSCH</label>
-                    <input type="checkbox" value="" id="name1" checked>
-                    <label for ="name2">ИНТЕРСКОЛ</label>
+                  <output name="sum"></output>
+                </div>
+                  <hr>
+
+                    <div class="filter-2">
+                    <b>Производители:</b>
+                    </div>
+                    
+                    <label for="Bosch">BOSCH</label>
+                    <input type="checkbox" value="Bosch" id="Bosch" checked>
+                    
+                  
+                    <label for="name2">ИНТЕРСКОЛ</label>
                     <input type="checkbox" value="" id="name2">
-                    <label for ="name3">MAKITA</label>
+                    
+                    
+                    <label for="name3">MAKITA</label>
                     <input type="checkbox" value="" id="name3" checked>
-                    <label for ="name4">DEWALT</label>
+                    
+                  
+                    <label for="name4">DEWALT</label>
                     <input type="checkbox" value="" id="name4">
-                    <label for ="name5">HITACHI</label>
+                    
+                    <label for="name5">HITACHI</label>
                     <input type="checkbox" value="" id="name5"><hr>
+                    
 
-                      <div class="filter-3">ПИТАНИЕ:</div>
+                      <div class="filter-3">
+                      <b>ПИТАНИЕ:</b>
+                      </div>
                       
-                      <label for ="name-power">Аккумуляторные</label>
-                      <input type="radio" name="power" id="name-power" value="" checked>
+                      <label for="accumulator">Аккумуляторные</label>
+                      <input type="radio" name="battery" id="accumulator" value="accumulator" checked>
+                      <label for="name-power-2">Сетевые</label>
+                      <input type="radio" name="battery" id="name-power-2" value="">
 
-                      <label for ="name-power-2">Сетевые</label>
-                      <input type="radio" name="power" id="name-power-2" value="">
 
                       <button class="button-show" type="submit" value="submit" aria-label="кнопка фильтр товаров">Показать</button>
 		              
@@ -387,7 +408,7 @@
                   			<button type="button" aria-label="продолжить покупки">Продолжить покупки</button>
                   				<button type="button" aria-label="Закрыть">Х</button>
               </section>
-             <!-- pop-up корзины - ->
+             <!-- pop-up корзины -->
   	 </body>
 </html>
 	

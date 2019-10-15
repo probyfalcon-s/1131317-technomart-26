@@ -354,14 +354,15 @@ a {
  }
 
 
-.search-icon input[type=text]:hover,
+/*.search-icon input[type=text]:hover,
 .search-icon input[type=text]:focus {
 	background-image: url("../img/svg/icon-search.svg");
 	opacity: 1;
 	border: none;
-}
+}*/
 
- .search-icon input[type=text]:active {
+ .search-icon input[type=text]:hover,
+ .search-icon input[type=text]:focus {
  	background-image: url("../img/svg/icon-red-search.svg");
     background-color: #ffffff;
     color: #000000;
@@ -372,7 +373,8 @@ a {
   color: #ffffff;
  }
 
-  .search-icon input[type=text]:active::placeholder {
+.search-icon input[type=text]:hover::placeholder,
+.search-icon input[type=text]:focus::placeholder {
   	color: red;
   }
    

@@ -52,7 +52,6 @@ a {
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
-	border: 1px solid #00fff2; /*delete*/
 }
 
 .main-navigation-wrapper {
@@ -1462,37 +1461,38 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-
-	border: 1px solid #003df5; /*delete*/
 	
 	margin: 0px;
 	padding: 0px;
-	
-
 }
 
 .main-catalog .catalog-main .catalog-list {
-	border: 1px solid #18f500; /*delete*/
 	margin: 0px;
 	padding: 0px;
-	
 }
 
-
 .main-catalog .catalog-main .sorting-wrapper {
-	border: 1px solid #00fff2; /*delete*/
 	margin-left: 10px;
 }
 
 .main-catalog .catalog-main .catalog-products {
-	border: 1px solid #ff0000; /*delete*/
 	margin: 0px;
 	padding: 0px;
-	
+}
+
+.catalog-main .catalog-item-2 {
+	margin-right: 0px;
+	margin-left: 20px;
+}
+
+.catalog-list-2 li:nth-child(3n+1) {
+	margin-left: -40px;
 }
 
 .catalog-products ul {
-	margin-left: -30px;
+	display: flex;
+	justify-content: flex-end;
+	/*margin-left: -30px;*/
 	margin-top: 20px;
 }
 
@@ -1621,15 +1621,15 @@ a {
 
  /*========ТОВАРЫ=======*/
  .catalog-products {
- 	margin: 20px auto;
- 	margin-left: 30px;
+ 	margin: 0px auto;
+ 	margin-left: 0px;
  }
 
  .catalog-products ul {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 }
 
@@ -1667,7 +1667,7 @@ a {
 
 .catalog-column-2 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	flex-wrap: wrap;
 }
 
@@ -1726,7 +1726,7 @@ a {
  }
 
 .catalog-item .flag-new {
-	background: url(img/new-flag.png) no-repeat 0 0;
+	background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 .catalog-item .actions {

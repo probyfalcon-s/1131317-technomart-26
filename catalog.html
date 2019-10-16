@@ -111,57 +111,40 @@
 	           <section class="catalog-column">
 	             <h2 class="visually-hidden">Фильтр товаров</h2>
 		            <form class="filter-catalog" action="https://echo.htmlacademy.ru" method="post">
-		              
-                    <div class="filter-1-wrapper">
+		              <div class="filter-1-wrapper">
 		              <div class="filter-1">
                   <b class="main-filter">Фильтр:</b>
                 </div>
                 </div>
-                <b>Цена</b>
+                <legend>Цена</legend>
                 <div class="range-filter">
-                
-                <label for="rang"></label>
+                  <label for="rang"></label>
                   <input type="range" min="0"  max="30000" name="range" id="rang" >
                   <output name="sum"></output>
                 </div>
                   <hr>
-
                     <div class="filter-2">
-                    <b>Производители:</b>
+                    <legend>Производители:</legend>
                     </div>
-                    
-                    <label for="Bosch">BOSCH</label>
                     <input type="checkbox" value="Bosch" id="Bosch" checked>
-                    
-                  
-                    <label for="name2">ИНТЕРСКОЛ</label>
+                    <label for="Bosch">BOSCH</label>
                     <input type="checkbox" value="" id="name2">
-                    
-                    
-                    <label for="name3">MAKITA</label>
+                    <label for="name2">ИНТЕРСКОЛ</label>
                     <input type="checkbox" value="" id="name3" checked>
-                    
-                  
-                    <label for="name4">DEWALT</label>
+                    <label for="name3">MAKITA</label>
                     <input type="checkbox" value="" id="name4">
-                    
-                    <label for="name5">HITACHI</label>
-                    <input type="checkbox" value="" id="name5"><hr>
-                    
-
-                      <div class="filter-3">
-                      <b>ПИТАНИЕ:</b>
+                    <label for="name4">DEWALT</label>
+                    <input type="checkbox" value="" id="name5">
+                    <label for="name5">HITACHI</label><hr>
+                    <div class="filter-3">
+                      <legend>ПИТАНИЕ:</legend>
                       </div>
-                      
-                      <label for="accumulator">Аккумуляторные</label>
                       <input type="radio" name="battery" id="accumulator" value="accumulator" checked>
+                      <label for="accumulator">Аккумуляторные</label>
+                      <input type="radio" name="battery" id="name-power-2" value=""> 
                       <label for="name-power-2">Сетевые</label>
-                      <input type="radio" name="battery" id="name-power-2" value="">
-
-
                       <button class="button-show" type="submit" value="submit" aria-label="кнопка фильтр товаров">Показать</button>
-		              
-		             </form>
+		            </form>
 	         </section>
 
 	       <section class="catalog-list">
@@ -302,7 +285,7 @@
 		       </ul>
 	        </section>
             </div>
-            
+
           <a class="visually-hidden"></a>
 	        <section class="pagination">
 		          <h3 class="visually-hidden">Пагинация</h3>

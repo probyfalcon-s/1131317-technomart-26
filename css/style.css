@@ -1691,11 +1691,6 @@ a {
 	display: inline-block;
 }
 
-.pagination {
-	display: inline-block;
-	margin-left: 220px;
-}
-
 .about-catalog-wrapper {
 	width: 100%;
 	background-color: #f2f6f8;
@@ -1921,9 +1916,32 @@ a {
 }
 
 /*ПАГИНАЦИЯ*/
-.pagination a {
-    padding: 8px 16px;
-    margin: 0 4px;
+.pagination {
+	margin-top: 30px;
+}
+
+.pagination-list {
+	display: flex;
+	flex-wrap: wrap;
+	
+	padding: 0;
+	margin: 0;
+
+  	list-style: none;
+  	margin-left: 230px;
+}
+
+.pagination-item {
+  	margin-right: 5px;
+}
+
+.pagination-item:last-child {
+  	margin-right: 0;
+}
+
+.pagination-item a {
+	display: block;
+	padding: 8px 16px; 
     font-family: 'PT Sans', sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -1934,16 +1952,23 @@ a {
 	text-transform: uppercase;
 }
 
-.pagination a:hover,
-.pagination a:focus {
+.pagination-item a:hover,
+.pagination-item a:focus {
 	border: 1px solid #999696;
 }
 
-.pagination a:active {
+.pagination-item a:active {
 	border: 1px solid #ee3643;
 }
 
-.pagination .current-pagination {
+.current-pagination a {
+	background-color: #ee3643;
+	color: #ffffff;
+}
+
+.current-pagination a:hover,
+.current-pagination a:focus,
+.current-pagination a:active {
 	background-color: #ee3643;
 	color: #ffffff;
 }

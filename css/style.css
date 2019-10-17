@@ -1308,10 +1308,14 @@ a {
 }
 
 .button-icon-catalog .basket-catalog:focus,
-.button-icon-catalog .basket-catalog:hover,
-.button-icon-catalog .basket-catalog:active {
-	background-color: #ee3643;
+.button-icon-catalog .basket-catalog:hover {
+	 background-color: #eb2331;
 }
+
+.button-icon-catalog .basket-catalog:active {
+	background-color: #c9303b;
+}
+
 
 .basket-catalog::before {
 	position: absolute;

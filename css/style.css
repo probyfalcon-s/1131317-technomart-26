@@ -450,12 +450,13 @@ a {
 	padding: 11px 25px;
 }
 
-.user-navigation:focus path,
-.user-navigation:hover path {
+
+.button-log-in:focus path,
+.button-log-in:hover path {
 	fill: #32425c;
 }
 
-.user-navigation:active path {
+.button-log-in:active path {
 	fill: #c5c5c5;
 }
 

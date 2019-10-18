@@ -245,6 +245,7 @@ a {
 
 .address {
 	display: inline-block;
+	vertical-align: top;
 	width: 350px;
 }
 
@@ -684,6 +685,7 @@ a {
 
 .promo a:not(.button-promo) {
 	display: inline-block;
+	vertical-align: top;
 	padding: 10px 25px;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -879,6 +881,7 @@ a {
 
 .slider-controls label {
 	display: inline-block;
+	vertical-align: top;
 	margin: 0 3px;
 	width: 7px;
 	height: 7px;
@@ -1092,6 +1095,7 @@ a {
 
 .service-list a {
 	display: inline-block;
+	vertical-align: top;
 	background-color: #32425c;
 	color: #ffffff;
 	padding: 15px 15px;
@@ -1107,6 +1111,7 @@ a {
 
 .sub-menu h4 {
 	display: inline-block;
+	vertical-align: top;
 	position: absolute;
 		
 	font-size: 36px;
@@ -1118,6 +1123,7 @@ a {
 
 .sub-menu p {
 	display: inline-block;
+	vertical-align: top;
 	position: absolute;
 	
 	font-family: 'PT Sans', sans-serif;
@@ -1128,6 +1134,7 @@ a {
 
 .sub-menu img {
 	display: inline-block;
+	vertical-align: top;
 	position: absolute;
 }
 
@@ -1734,6 +1741,7 @@ a {
 .selector .slider-price {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     padding: 5px 40px;
     width: 10%;
     background-color: #f7f3ec;
@@ -1935,6 +1943,7 @@ a {
 
 .sorting-wrapper li {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .about-catalog-wrapper {
@@ -2010,6 +2019,7 @@ a {
 
 .actions .buy::before {
 	display: inline-block;
+	vertical-align: top;
 	content: url("../img/svg/icon-cart.svg");
 	top: 0px;
 	left: -20px;

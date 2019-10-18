@@ -248,6 +248,10 @@ a {
 	width: 350px;
 }
 
+.address a {
+	color: #ffffff;
+}
+
 
 .footer-button {
 	margin: 0;
@@ -587,6 +591,10 @@ a {
 
 	position: relative;
 
+}
+
+.contacts-phone a {
+	color: #ee3643;
 }
 
 .contacts-phone:before {

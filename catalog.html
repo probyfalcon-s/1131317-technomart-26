@@ -79,7 +79,7 @@
                     <ul class="site-navigation">
                       <li><a class="button button-nav" href="index.html">Главная</a></li>
                       <li><a class="button button-nav" href="#">Компания</a></li>
-                      <li><a class="button button-nav" href="#">Каталог</a></li>
+                      <li><a class="button button-nav current-catalog" href="#">Каталог</a></li>
                       <li><a class="button button-nav" href="#">Новости</a></li>
                       <li><a class="button button-nav" href="#">Спецпредложения</a></li>
                       <li><a class="button button-nav" href="#">Доставка</a></li>
@@ -118,9 +118,17 @@
                 </div>
                 <legend>Цена</legend>
                 <div class="range-filter">
-                  <label for="rang"></label>
-                  <input type="range" min="0"  max="30000" name="range" id="rang" >
-                  <output name="sum"></output>
+                  <div class="selector">
+                    <div class="price-slider" id="slider">
+                      <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                            <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                          </div>
+                        <span id="min-price" data-currency="" class="slider-price">0</span>
+                        <span class="seperator">-</span>
+                        <span id="max-price" data-currency="" data-max="30000"  class="slider-price">30000 </span>
+                    </div> 
                 </div>
                   <hr>
                     <div class="filter-2">
@@ -332,7 +340,7 @@
                                       <ul class="footer-button">
                                         <li><a class="button" href="#">Компания</a></li>
                                         <li><a class="button" href="#">Новости</a></li>
-                                        <li><a class="button" href="catalog.html">Каталог</a></li>
+                                        <li><a class="button current-footer-catalog" href="catalog.html">Каталог</a></li>
                                         <li><a class="button" href="#">Доставка</a></li>
                                         <li><a class="button" href="#">Контакты</a></li>
                                         <li><a class="button button-second-line" href="#">Материалы</a></li>
@@ -397,6 +405,7 @@
                   				<button type="button" aria-label="Закрыть">Х</button>
               </section>
              <!-- pop-up корзины -->
+             <script src="js/range.js"></script>
   	 </body>
 </html>
 	

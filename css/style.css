@@ -1038,6 +1038,9 @@ a {
 
 .about  ul {
 	list-style: none;
+}
+
+.about {
 	position: relative;
 }
 
@@ -1297,10 +1300,10 @@ a {
 	line-height: 20px;
 }
 
-.button-red-4 {
+.about .button-red-4 {
 	position: absolute;
-	bottom: -70px;
-	left: 35px;
+	bottom: 85px;
+	left: 0px;
 	font-family: 'Cuprum', 'PT Sans';
 }
 
@@ -2597,6 +2600,11 @@ textarea::placeholder {
 	top: 0;
 	left: 0;
 	z-index: 1;
+}
+
+.iframe {
+	frameborder: 0;
+	border: 0;
 }
 
 .map-pop iframe {

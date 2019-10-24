@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
       <link href="css/min-style.css" rel="stylesheet">
+      <link href="css/min-normalize.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
 
@@ -14,7 +15,7 @@
           <div class="main-navigation-first">
           <div class="container">
             <a class="logo-tehnomart" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="153" height="25.59" viewBox="-20 -8 190.5 30.59">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="153" height="25.59" viewBox="-27 -8 190.5 30.59">
                 <defs>
                   <style>
                     .cls-1 {
@@ -28,7 +29,7 @@
             </a>
               <form class="search-icon" action="https://echo.htmlacademy.ru" method="post">
                 <input type="text" name="search" placeholder="Поиск:">
-                  <button class="button search" type="submit" aria-label="поиск по странице"></button>
+                  <button class="button search visually-hidden" type="submit" aria-label="поиск по странице"></button>
               </form>
                 <div class="button-icon">
                   <a class="button button-basket" href="#">Закладки: 0</a>
@@ -127,7 +128,11 @@
                   <h4 class="visually-hidden">слайдер</h4>
                     <div class="slider-list">
                     <div class="slide-1">
-                      <b>ДРЕЛИ</b>
+                      <b class="slider-name">ПЕРФОРАТОРЫ</b>
+                        <p>Настоящие мужские игрушки</p>
+                    </div>
+                    <div class="slide-2">
+                      <b class="slider-name">ДРЕЛИ</b>
                         <p>Соседям на радость!</p>
                     </div>
                       <input type="radio" id="btn-1" name="toggle" checked>
@@ -142,8 +147,8 @@
                     </div>
                     <div class="slider-inner">
                     <div class="slider">
-                      <img src="img/promo1.jpg" width="620" height="266" alt="мужчина с дрелью сверлит стену">
                       <img src="img/promo2.jpg" width="620" height="266" alt="мужчина с перфоратором сверлит стену">
+                      <img src="img/promo1.jpg" width="620" height="266" alt="мужчина с дрелью сверлит стену">
                     </div> 
                     </div>
                       <a class="button button-promo" href="catalog.html">Открыть каталог</a>
@@ -163,7 +168,7 @@
                       <a href="catalog.html">
                       <img src="img/Perforator_1.jpg" alt="BOSCH BFG 3000" width="218" height="170">
                       </a>
-                          <h3><a href="catalog.html">Перфоратор BOSCH BFG 3000</a></h3>
+                          <h3><a href="catalog.html">Перфоратор BOSCH BFG 9000</a></h3>
                             <p class="delete">32500 Р.</p>
                             <p class="price">25500 Р.</p>
                     </li>
@@ -171,7 +176,7 @@
                         <a href="catalog.html">
                         <img src="img/Perforator_2.jpg" alt="BOSCH BFG 6000" width="218" height="170">
                         </a>
-                            <h3><a href="catalog.html">Перфоратор BOSCH BFG 6000</a></h3>
+                            <h3><a href="catalog.html">Перфоратор BOSCH BFG 3000</a></h3>
                               <p class="delete">22500 Р.</p>
                               <p class="price">15500 Р.</p>
                       </li>
@@ -179,7 +184,7 @@
                           <a href="catalog.html">
                             <img src="img/Perforator_3.jpg" alt="BOSCH BFG 2000" width="218" height="170">
                           </a>
-                              <h3><a href="catalog.html">Перфоратор BOSCH BFG 2000</a></h3>
+                              <h3><a href="catalog.html">Перфоратор BOSCH BFG 6000</a></h3>
                                 <p class="delete">30500 P.</p>
                                 <p class="price">25500 Р.</p>
                         </li>
@@ -188,7 +193,7 @@
                             <a href="catalog.html">
                             <img src="img/Perforator_4.jpg" alt="BOSCH BFG 3000" width="218" height="170">
                             </a>
-                                <h3><a href="catalog.html">Перфоратор BOSCH BFG 3000</a></h3>
+                                <h3><a href="catalog.html">Перфоратор BOSCH BFG 2000</a></h3>
                                   <p class="delete"></p>
                                   <p class="price">12500 Р.</p>
                           </li>
@@ -286,7 +291,6 @@
                             <img src="img/assurance.png" alt="знак качества" width="389" height="283">
                       </li>
                     </ul>
-                    </ul>
                     <ul>
                       <li class="service-list list-credit">
                         <a class="service-button button-credit" href="#credit">Кредит</a>
@@ -302,7 +306,8 @@
                       <li><button class="button-red button-service" type="button">Отправить заявку</button></li>
                     </ul>
                     </ul>
-                </section>
+                     </ul>
+                    </section>
                 </section>
            </article>
                 
@@ -335,7 +340,7 @@
                             <a class="map-google" href="map.html">
                               <img src="img/maps.png" width="300" height="158" alt="Адрес компании ул.Большая Конюшенная, 19" >
                             </a>
-                            <a class="button button-red button-red-3" href="writeus.html">Заблудились? Напишите нам</a>
+                            <a class="button button-red button-red-3" href="writeus.html">Заблудились? Напишите нам!</a>
 			                   </div>
   		            </section>
               </div>
@@ -402,7 +407,7 @@
                               </p>
                               <p class="footer-copyright">
                                 <b>Разработано -</b>
-                                  <a class="button" href="http://htmlacademy.ru" aria-label="сайт разработчика htmlacademy">htmlacademy.ru</a>
+                                  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="сайт разработчика htmlacademy">htmlacademy.ru</a>
                               </p>
                         </div>
                 </div>

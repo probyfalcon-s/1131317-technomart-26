@@ -10,6 +10,12 @@ var creditSub = document.querySelector(".sub-menu-3");
 var current = document.querySelector(".current-delivery");
 var currentLink = document.querySelector(".current-delivery-link");
 
+var btnOne = document.querySelector("#btn-1");
+var btnTwo = document.querySelector("#btn-2");
+
+var sliderFirst = document.querySelector(".slide-1");
+var sliderSecond = document.querySelector(".slide-2");
+
 
   delivery.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -35,6 +41,20 @@ var currentLink = document.querySelector(".current-delivery-link");
   currentLink.classList.remove("current-delivery-link");
   creditSub.classList.add("service-show");
 });
+
+  btnTwo.addEventListener("click", function (evt) {
+  sliderSecond.classList.add("slider-name-show");
+  sliderFirst.classList.add("slider-name-off");
+  sliderFirst.classList.remove("slider-name-show")
+});
+
+  btnOne.addEventListener("click", function (evt) {
+  sliderSecond.classList.add("slider-name-off");
+  sliderFirst.classList.add("slider-name-show");
+  sliderSecond.classList.remove("slider-name-show");
+});
+
+
 
 
 
